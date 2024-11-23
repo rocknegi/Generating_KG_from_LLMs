@@ -1,0 +1,114 @@
+{
+    "categories": [
+        {
+            "name": "Automotive Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "blickfeld cube sensors 2022",
+                "hmetc lidar",
+                "innoviz pro",
+                "livox",
+                "livox horizon",
+                "not mentioned",
+                "robosense m1",
+                "velodyne",
+                "velodyne hdl 64e",
+                "velodyne lidar",
+                "velodyne sensor",
+                "velodyne velarray",
+                "velodyne velarray h800",
+                "velodyne velarray h800 pro",
+                "waymo's"
+            ]
+        },
+        {
+            "name": "No Lidar Sensors Mentioned",
+            "sensors": []
+        },
+        {
+            "name": "None",
+            "sensors": []
+        },
+        {
+            "name": "Unspecified Or No Category",
+            "sensors": []
+        },
+        {
+            "name": "No Category",
+            "sensors": []
+        },
+        {
+            "name": "Autonomous Driving Lidar",
+            "sensors": [
+                "velodyne lidar"
+            ]
+        },
+        {
+            "name": "No Specific Sensors Mentioned",
+            "sensors": []
+        },
+        {
+            "name": "Industrial Surveying Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "blickfeld cube range",
+                "livox horizon m1"
+            ]
+        },
+        {
+            "name": "Surveying Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "livox horizon",
+                "robosense m1",
+                "velodyne"
+            ]
+        },
+        {
+            "name": "Unknown Application",
+            "sensors": []
+        },
+        {
+            "name": "Lidar Sensors",
+            "sensors": []
+        },
+        {
+            "name": "Industrial Lidar",
+            "sensors": [
+                "innoviz pro",
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "Surveying Or Industrial Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "blickfeld cube range"
+            ]
+        },
+        {
+            "name": "No Categorized Lidar Sensors Found",
+            "sensors": []
+        },
+        {
+            "name": "Industrial General Purpose Lidar",
+            "sensors": [
+                "innoviz pro"
+            ]
+        },
+        {
+            "name": "Not Applicable",
+            "sensors": []
+        },
+        {
+            "name": "Autonomous Vehicles Lidar",
+            "sensors": [
+                "velodyne velarray"
+            ]
+        }
+    ],
+    "metadata": {
+        "total_categories": 17,
+        "total_unique_sensors": 18
+    }
+}
