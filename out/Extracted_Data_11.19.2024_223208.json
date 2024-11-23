@@ -1,0 +1,279 @@
+{
+    "categories": [
+        {
+            "name": "Automotive LiDAR Sensors",
+            "sensors": [
+                "Livox Horizon",
+                "Livox Robosense Horizon M1 Cube",
+                "Robosense M1",
+                "Various LiDAR Sensors",
+                "Velarray",
+                "Velodyne Innoviz H800 Pro",
+                "Velodyne Velarray"
+            ]
+        },
+        {
+            "name": "Automotive",
+            "sensors": [
+                "Blickfeld Cube",
+                "Blickfeld Cube RangeInnovizPro",
+                "Innoviz Pro",
+                "LiDAR",
+                "LiDAR sensors",
+                "Lidar Sensors",
+                "Livox Horizon",
+                "Robosense M1",
+                "Velodyne Velarray",
+                "Velodyne Velarray H800",
+                "solid-state LiDARs"
+            ]
+        },
+        {
+            "name": "RADAR and LiDAR",
+            "sensors": [
+                "LiDAR",
+                "RADAR"
+            ]
+        },
+        {
+            "name": "Surveying/Research",
+            "sensors": [
+                "non-rotary LiDAR sensors"
+            ]
+        },
+        {
+            "name": "Surveying",
+            "sensors": [
+                "LiDAR sensor",
+                "Livox Horizon LiDAR"
+            ]
+        },
+        {
+            "name": "LiDAR Sensors",
+            "sensors": [
+                "Kitti",
+                "LiDAR",
+                "LiDAR sensor",
+                "LiDAR sensors",
+                "NuScenes",
+                "PV-RCNN",
+                "PointPillars",
+                "PointR-CNN",
+                "Velodyne Velarray H800",
+                "Waymo",
+                "no specific sensors mentioned"
+            ]
+        },
+        {
+            "name": "Solid-state LiDAR",
+            "sensors": [
+                "Micro-mirrors with MEMS technology",
+                "solid-state LiDAR sensors"
+            ]
+        },
+        {
+            "name": "Rotary 360\u00b0 LiDAR",
+            "sensors": [
+                "rotary 360\u00b0 LiDARs"
+            ]
+        },
+        {
+            "name": "Industrial",
+            "sensors": [
+                "LiDAR"
+            ]
+        },
+        {
+            "name": "360\u00b0 Rotary LiDAR",
+            "sensors": [
+                "360 \u00b0 rotary LiDAR"
+            ]
+        },
+        {
+            "name": "Mechanical LiDAR",
+            "sensors": [
+                "Moving/rotating mirror or lens parts"
+            ]
+        },
+        {
+            "name": "Non-Rotary LiDARs",
+            "sensors": []
+        },
+        {
+            "name": "360\u00b0 mechanically spinning LiDARs",
+            "sensors": [
+                "Waymo\u2019s"
+            ]
+        },
+        {
+            "name": "Industrial/Robotics LiDAR Sensors",
+            "sensors": [
+                "Blickfeld Velarray"
+            ]
+        },
+        {
+            "name": "Type",
+            "sensors": []
+        },
+        {
+            "name": "Application",
+            "sensors": [
+                "Autonomous Vehicles (assumed)",
+                "LiDAR sensors"
+            ]
+        },
+        {
+            "name": "LiDAR Sensors for Automotive/Industrial Applications",
+            "sensors": []
+        },
+        {
+            "name": "No specified category",
+            "sensors": [
+                "2022"
+            ]
+        },
+        {
+            "name": "LiDAR Sensor",
+            "sensors": [
+                "Vehicle LiDAR Sensor"
+            ]
+        },
+        {
+            "name": "LiDAR",
+            "sensors": [
+                "LiDAR"
+            ]
+        },
+        {
+            "name": "Automotive LiDAR",
+            "sensors": [
+                "Robosense M1",
+                "Velodyne Velarray",
+                "Velodyne Velarray H800"
+            ]
+        },
+        {
+            "name": "Industrial/ Surveying LiDAR",
+            "sensors": [
+                "Blickfeld Cube",
+                "Innoviz Pro"
+            ]
+        },
+        {
+            "name": "Lidar Sensor Models",
+            "sensors": [
+                "Blickfeld Cube",
+                "Robosense M1",
+                "Velodyne Velarray"
+            ]
+        },
+        {
+            "name": "Surveying/Industrial LiDAR Sensors",
+            "sensors": [
+                "Blickfeld Cube",
+                "Livox Horizon"
+            ]
+        },
+        {
+            "name": "Surveying/Industrial",
+            "sensors": [
+                "Livox Horizon",
+                "LivoxHorizon00.10.20.30.4",
+                "Robosense M1"
+            ]
+        },
+        {
+            "name": "Automotive/Industrial Sensors",
+            "sensors": [
+                "Blickfeld Cube"
+            ]
+        },
+        {
+            "name": "Surveying Sensors",
+            "sensors": []
+        },
+        {
+            "name": "Industrial/Research LiDAR",
+            "sensors": [
+                "Blickfeld Cube",
+                "Blickfeld Cube Range",
+                "Innoviz Pro",
+                "Livox Horizon",
+                "Robosense M1"
+            ]
+        },
+        {
+            "name": "Unknown Application",
+            "sensors": [
+                "LiDARs"
+            ]
+        },
+        {
+            "name": "Surveying or Mapping LiDAR",
+            "sensors": [
+                "Livox Horizon"
+            ]
+        },
+        {
+            "name": "Industrial/General Purpose",
+            "sensors": [
+                "Livox Horizon",
+                "Robosense M1"
+            ]
+        },
+        {
+            "name": "Surveying/LiDAR Survey",
+            "sensors": []
+        },
+        {
+            "name": "Industrial/Surveying",
+            "sensors": [
+                "Livox Horizon"
+            ]
+        },
+        {
+            "name": "Blickfeld Sensors",
+            "sensors": [
+                "Blickfeld Cube Sensor 2022"
+            ]
+        },
+        {
+            "name": "Innoviz LiDARs",
+            "sensors": [
+                "Innoviz Pro"
+            ]
+        },
+        {
+            "name": "Unknown Type",
+            "sensors": [
+                "LiDAR sensor"
+            ]
+        },
+        {
+            "name": "LiDAR Technologies",
+            "sensors": [
+                "solid-state LiDAR"
+            ]
+        },
+        {
+            "name": "Benchmarked Sensors",
+            "sensors": []
+        },
+        {
+            "name": "Autonomous Driving",
+            "sensors": [
+                "Velodyne LiDAR"
+            ]
+        },
+        {
+            "name": "Surveying/Mapping",
+            "sensors": [
+                "Waymo LiDAR"
+            ]
+        }
+    ],
+    "metadata": {
+        "total_categories": 40,
+        "total_unique_sensors": 43
+    }
+}

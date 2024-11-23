@@ -1,0 +1,148 @@
+{
+    "categories": [
+        {
+            "name": "Automotive Lidar",
+            "sensors": [
+                "360\u00c2\u00b0 mechanically spinning lidar",
+                "3d lidars",
+                "automotive lidar technology",
+                "blickfeld cube",
+                "blickfeld cube range",
+                "blickfeld cube sensor",
+                "blickfeld cube sensors 2022",
+                "innoviz horizon m1",
+                "innoviz pro",
+                "kitti dataset",
+                "kitti lidar",
+                "lidar sensor",
+                "lidar sensors",
+                "livox horizon",
+                "livox horizon lidar",
+                "non rotary lidars",
+                "nuscenes lidar",
+                "robosense m1",
+                "vehicle lidar sensor",
+                "velodyne lidar (10 models)",
+                "velodyne velarray",
+                "velodyne velarray h800",
+                "waymo lidar",
+                "waymo open dataset"
+            ]
+        },
+        {
+            "name": "Solid-State Lidar",
+            "sensors": [
+                "solid-state lidars"
+            ]
+        },
+        {
+            "name": "Rotary 360\u00c3\u00a2\u00c2\u00b0 Lidar",
+            "sensors": [
+                "rotary 360\u00c2\u00b0 lidars"
+            ]
+        },
+        {
+            "name": "Surveying Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "lidar",
+                "livox horizon",
+                "sensors"
+            ]
+        },
+        {
+            "name": "Lidar Sensors",
+            "sensors": [
+                "no specific lidar sensor names mentioned",
+                "pointpillars lidar",
+                "pointr cnn lidar",
+                "pv rcnn lidar"
+            ]
+        },
+        {
+            "name": "General Lidar",
+            "sensors": [
+                "360 \u00c2\u00b0 rotary lidar",
+                "lidar sensor"
+            ]
+        },
+        {
+            "name": "Industrial Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "lidar sensors",
+                "livox robosense",
+                "velarray"
+            ]
+        },
+        {
+            "name": "Waymo'S Lidar",
+            "sensors": [
+                "waymo\u00e2\u0080\u0099s robotaxis lidar"
+            ]
+        },
+        {
+            "name": "Industrial Other Lidar",
+            "sensors": [
+                "innoviz pro"
+            ]
+        },
+        {
+            "name": "Unknown Application Lidar",
+            "sensors": [
+                "hokuyo ust 10lx"
+            ]
+        },
+        {
+            "name": "Surveying Industrial Lidar",
+            "sensors": [
+                "livox horizon",
+                "robosense m1",
+                "velodyne velarray"
+            ]
+        },
+        {
+            "name": "Surveying And Mapping Lidar",
+            "sensors": [
+                "blickfeld cube rangeinnovizpro",
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "General Purpose Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "blickfeld cube range"
+            ]
+        },
+        {
+            "name": "Industrial Surveying Lidar",
+            "sensors": [
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "Industrial General Purpose Lidar",
+            "sensors": [
+                "robosense m1",
+                "velodyne velarray h800"
+            ]
+        },
+        {
+            "name": "Lidar",
+            "sensors": [
+                "lidar sensors"
+            ]
+        },
+        {
+            "name": "Surveying And Mapping",
+            "sensors": [
+                "pointrcnn"
+            ]
+        }
+    ],
+    "metadata": {
+        "total_categories": 17,
+        "total_unique_sensors": 39
+    }
+}
