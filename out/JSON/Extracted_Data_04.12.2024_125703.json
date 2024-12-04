@@ -1,0 +1,123 @@
+{
+    "categories": [
+        {
+            "name": "Automotive Lidar",
+            "sensors": [
+                "blickfeld cube sensors 2022",
+                "innoviz h800 pro",
+                "innoviz pro",
+                "livox horizon",
+                "robosense m1",
+                "velodyne",
+                "velodyne 10 models ( unspecified names not provided)",
+                "velodyne lidar",
+                "velodyne velarray",
+                "velodyne velarray h800",
+                "waymo",
+                "waymo's mechanically spinning lidar"
+            ]
+        },
+        {
+            "name": "Surveying Lidar",
+            "sensors": [
+                "blickfeld cube"
+            ]
+        },
+        {
+            "name": "No Lidar Sensors Mentioned",
+            "sensors": []
+        },
+        {
+            "name": "Unspecified Lidar",
+            "sensors": []
+        },
+        {
+            "name": "Velodyne Lidar",
+            "sensors": [
+                "velodyne lidars"
+            ]
+        },
+        {
+            "name": "Industrial Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "innoviz pro",
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "No Category",
+            "sensors": []
+        },
+        {
+            "name": "Surveying And Mapping Lidar",
+            "sensors": [
+                "blickfeld m1 cube",
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "Unknown Application",
+            "sensors": []
+        },
+        {
+            "name": "Lidar Sensors For Surveying",
+            "sensors": []
+        },
+        {
+            "name": "No Specific Lidar Sensor Mentioned",
+            "sensors": []
+        },
+        {
+            "name": "Industrial General Purpose Lidar",
+            "sensors": [
+                "blickfeld cube",
+                "blickfeld cube range"
+            ]
+        },
+        {
+            "name": "Other Lidar",
+            "sensors": [
+                "livox horizon",
+                "robosense m1"
+            ]
+        },
+        {
+            "name": "Livox Lidar",
+            "sensors": [
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "Surveying Sensing Lidar",
+            "sensors": [
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "General Purpose Lidar",
+            "sensors": [
+                "livox horizon"
+            ]
+        },
+        {
+            "name": "None",
+            "sensors": []
+        },
+        {
+            "name": "Not Mentioned",
+            "sensors": []
+        },
+        {
+            "name": "Research And Development Sensors",
+            "sensors": [
+                "livox horizon",
+                "velodyne velarray"
+            ]
+        }
+    ],
+    "metadata": {
+        "total_categories": 19,
+        "total_unique_sensors": 16
+    }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://yourproject.org/schema"
+         xmlns="http://yourproject.org/schema#">
+
+<owl:Ontology rdf:about="http://yourproject.org/schema"/>
+
+<owl:Class rdf:about="#innovator">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#innovation">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_developed">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovator"/>
+  <rdfs:range rdf:resource="#innovation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#development_stage">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_development_stage">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#development_stage"/>
+</owl:Class>
+
+<owl:Class rdf:about="#need">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fulfills">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#need"/>
+</owl:Class>
+
+<owl:Class rdf:about="#problem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#solves">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#problem"/>
+</owl:Class>
+
+<owl:Class rdf:about="#symptom">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_symptom">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#problem"/>
+  <rdfs:range rdf:resource="#symptom"/>
+</owl:Class>
+
+<owl:Class rdf:about="#disruption">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#causes_disruption">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#disruption"/>
+</owl:Class>
+
+<owl:Class rdf:about="#benefits">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_benefit">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#benefits"/>
+</owl:Class>
+
+<owl:Class rdf:about="#improvement">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_improvement">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#improvement"/>
+</owl:Class>
+
+<owl:Class rdf:about="#embodiment">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#embodied_by">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#innovation"/>
+  <rdfs:range rdf:resource="#embodiment"/>
+</owl:Class>
+
+<owl:Class rdf:about="#usage">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#has_usage">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#embodiment"/>
+  <rdfs:range rdf:resource="#usage"/>
+</owl:Class>
+
+
+</rdf:RDF>
