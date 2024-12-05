@@ -1,0 +1,73 @@
+```xml
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:owl="http://www.w3.org/2002/07/owl#"
+          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <!-- Base class for all entities -->
+    <owl:Class rdf:about="#Thing">
+        <rdfs:label>Thing</rdfs:label>
+    </owl:Class>
+
+    <!-- Class representing a category -->
+    <owl:Class rdf:about="#Category">
+        <rdfs:label>Category</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Thing"/>
+    </owl:Class>
+
+    <!-- Class representing a sensor -->
+    <owl:Class rdf:about="#Sensor">
+        <rdfs:label>Sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Thing"/>
+    </owl:Class>
+
+    <!-- Define each category as a subclass of Category -->
+    <owl:Class rdf:about="#AutomotiveLidar">
+        <rdfs:label>Automotive Lidar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Category"/>
+    </owl:Class>
+    <owl:Class rdf:about="#IndustrialLidar">
+        <rdfs:label>Industrial Lidar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Category"/>
+    </owl:Class>
+    <!-- Define each category as a subclass of Category -->
+    <owl:Class rdf:about="#SurveyingLidar">
+        <rdfs:label>Surveying Lidar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Category"/>
+    </owl:Class>
+
+    <!-- Define each sensor as a subclass of Sensor -->
+    <owl:Class rdf:about="#BlickfeldCubeSensors2022">
+        <rdfs:label>Blickfeld Cube Sensors 2022</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#belongsToCategory"/>
+                <owl:someValuesFrom rdf:resource="#AutomotiveLidar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <!-- Represent categories and sensors as subclasses under their respective hierarchies -->
+    <owl:Class rdf:about="#NoCategory">
+        <rdfs:label>No Category</rdfs:label>
+        <rdfs:comment>No sensors were listed for this category in the JSON data.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Define object properties to capture relationships between categories and sensors -->
+    <owl:ObjectProperty rdf:about="#belongsToCategory">
+        <rdfs:label>belongs to a Category</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasSensor">
+        <rdfs:label>contains a Sensor</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- Define relationships between categories and sensors -->
+    <AutomotiveLidar rdf:about="#AutomotiveLidar">
+        <rdf:type rdf:resource="#Category"/>
+        <hasSensor rdf:resource="#BlickfeldCubeSensors2022"/>
+    </AutomotiveLidar>
+
+</rdf:RDF>
+```

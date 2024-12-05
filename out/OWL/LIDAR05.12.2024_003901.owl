@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/lidar.owl"
+         xmlns="http://example.org/lidar.owl#">
+
+<owl:Ontology rdf:about="http://example.org/lidar.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_sensor"/>
+
+<owl:Class rdf:about="#LidarCategory">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Automotive_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mobile_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_And_Mapping_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrials_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Solid_State_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#No_Category">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hmetc_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Velodyne_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Livox_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Unknown_No_Specific_Brand">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_Industrial_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Blickfeld_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Other_Industrial_Automotive_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lidar_For_Surveying_Industrial_Testing">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Commercial_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Robotics_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Autonomous_Driving_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#LidarSensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#blickfeld_cube_sensors">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#blickfeld_cube_sensors"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#innoviz_pro">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#innoviz_pro"/>
+  <rdf:type rdf:resource="#Industrial_Lidar"/>
+  <rdf:type rdf:resource="#Other_Industrial_Automotive_Lidar"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#livox_horizon">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#livox_horizon"/>
+  <rdf:type rdf:resource="#Surveying_Lidar"/>
+  <rdf:type rdf:resource="#Mobile_Lidar"/>
+  <rdf:type rdf:resource="#Industrials_Lidar"/>
+  <rdf:type rdf:resource="#Livox_Lidar"/>
+  <rdf:type rdf:resource="#Industrial_Commercial_Lidar"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#robosense_m1">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#robosense_m1"/>
+  <rdf:type rdf:resource="#Mobile_Lidar"/>
+  <rdf:type rdf:resource="#Lidar_For_Surveying_Industrial_Testing"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_lidar_(no_specific_model_mentioned)">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne_lidar_(no_specific_model_mentioned)"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_sensors">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne_sensors"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_velarray">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne_velarray"/>
+  <rdf:type rdf:resource="#Velodyne_Lidar"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_velarray_h800">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne_velarray_h800"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_velarray_h800_pro">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#velodyne_velarray_h800_pro"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#waymo's_360°_mechanically_spinning_lidar">
+  <rdf:type rdf:resource="#Automotive_Lidar"/>
+  <has_sensor rdf:resource="#waymo's_360°_mechanically_spinning_lidar"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#blickfeld_cube">
+  <rdf:type rdf:resource="#Industrial_Lidar"/>
+  <has_sensor rdf:resource="#blickfeld_cube"/>
+  <rdf:type rdf:resource="#Surveying_Industrial_Lidar"/>
+  <rdf:type rdf:resource="#Blickfeld_Lidar"/>
+  <rdf:type rdf:resource="#Lidar_For_Surveying_Industrial_Testing"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#livox_robosense_horizon">
+  <rdf:type rdf:resource="#Industrial_Lidar"/>
+  <has_sensor rdf:resource="#livox_robosense_horizon"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hmetc_lidar_sensor">
+  <rdf:type rdf:resource="#Hmetc_Lidar"/>
+  <has_sensor rdf:resource="#hmetc_lidar_sensor"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#blickfeld_cube_range">
+  <rdf:type rdf:resource="#Surveying_Industrial_Lidar"/>
+  <has_sensor rdf:resource="#blickfeld_cube_range"/>
+  <rdf:type rdf:resource="#Lidar_For_Surveying_Industrial_Testing"/>
+  <rdf:type rdf:resource="#LidarSensor"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
