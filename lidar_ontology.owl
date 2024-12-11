@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/lidar.owl"
+         xmlns="http://example.org/lidar.owl#">
+
+<owl:Ontology rdf:about="http://example.org/lidar.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_sensor">
+  <rdfs:domain rdf:resource="#LidarCategory"/>
+  <rdfs:range rdf:resource="#Sensor"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#LidarCategory">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Automotive_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#innoviz_pro"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#kitti"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#no_specific_brand_model_mentioned"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#robosense_m1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_h800_pro"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_velarray"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_velarray_h800"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#waymo_s_lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#innoviz_pro">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#kitti">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#livox_horizon">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#no_specific_brand_model_mentioned">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#robosense_m1">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_h800_pro">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_lidar">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_velarray">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_velarray_h800">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#waymo_s_lidar">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#blickfeld_cube">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#blickfeld_cube_range">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Solid_State_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#No_Category_Not_Specified">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#No_Category">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mechanical_Lidar_Sensors">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Solid_State_Lidar_Sensors_With_Mems_Technology">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Surveying_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_Navigation_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_robosense_blickfeld_m1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#livox_robosense_blickfeld_m1">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#None_No_Specific_Branded_Or_Model_Names_Mentioned">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#No_Specific_Branded_Or_Model_Names_Mentioned">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#No_Specific_Lidar_Sensors_Mentioned">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lidar_Sensors">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Robotics_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_Miscellaneous_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#innovizpro"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#innovizpro">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Blickfeld_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_sensors_2022"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#blickfeld_cube_sensors_2022">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Other_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#innoviz_pro"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#robosense_m1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Innoviz_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#innoviz_pro"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Surveying_And_Mapping_Lidar">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Autonomous_Driving">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Industrial_Sensors">
+  <rdfs:subClassOf rdf:resource="#LidarCategory"/>
+</owl:Class>
+
+
+</rdf:RDF>
