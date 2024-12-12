@@ -13,12 +13,21 @@
   <rdfs:range rdf:resource="#Sensor"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="#has_part">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
 <owl:Class rdf:about="#Category">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Sensor">
-  <rdfs:subClassOf rdf:resource="#Category"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
 <owl:Class rdf:about="#automotive lidar">
@@ -26,91 +35,79 @@
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_hdl_64e"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne sensors"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_vls_128"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne lidar"/>
+      <owl:someValuesFrom rdf:resource="#waymo_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#hmetc mechanical lidar"/>
+      <owl:someValuesFrom rdf:resource="#a_360_°_rotary_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#hmetc solid state lidar"/>
+      <owl:someValuesFrom rdf:resource="#waymo's_360°_mechanically_spinning_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velarray"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#waymo's mechanically spinning lidar"/>
+      <owl:someValuesFrom rdf:resource="#2022_lidar_sensor"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne velarray h800 pro"/>
+      <owl:someValuesFrom rdf:resource="#vehicle_lidar_sensor"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#innoviz range"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne velarray"/>
+      <owl:someValuesFrom rdf:resource="#innoviz_pro"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#lidar sensor"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_range"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_velarray"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#innoviz pro"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#robosense m1"/>
+      <owl:someValuesFrom rdf:resource="#robosense_m1"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -122,25 +119,27 @@
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#livox horizon"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne velarray h800"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_velarray_h800"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube sensors 2022"/>
+      <owl:someValuesFrom rdf:resource="#blickfeld_cube_sensors"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#luminar_lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
 </owl:Class>
 
 <owl:Class rdf:about="#surveying lidar">
@@ -148,49 +147,73 @@
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#livox horizon"/>
+      <owl:someValuesFrom rdf:resource="#riegl_vq_880_g"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne velarray"/>
+      <owl:someValuesFrom rdf:resource="#lidar_lite_v3"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube"/>
+      <owl:someValuesFrom rdf:resource="#point_cloud_sensors"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube range"/>
+      <owl:someValuesFrom rdf:resource="#xlidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#livox_horizon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#riegl_lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#hesai_pandar_64t"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#livox horizon">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#solid state lidar">
+<owl:Class rdf:about="#">
   <rdfs:subClassOf rdf:resource="#Category"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#not mentioned"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#not mentioned">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne sensors">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#rplidar_a1m8"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#rplidar_s1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#hesai_pandar40"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
 </owl:Class>
 
 <owl:Class rdf:about="#industrial lidar">
@@ -198,47 +221,41 @@
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#livox horizon"/>
+      <owl:someValuesFrom rdf:resource="#bijelic_et_al.'s_tested_lidar_sensors"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld m1 cube"/>
+      <owl:someValuesFrom rdf:resource="#hesai_pandar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#blickfeld cube"/>
+      <owl:someValuesFrom rdf:resource="#robosense_m1"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#livox robosense"/>
+      <owl:someValuesFrom rdf:resource="#hesai_lidar"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#lidar sensor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#no specific brand model mentioned (assumed to be a velodyne sensor as commonly used in industrial applications)"/>
+      <owl:someValuesFrom rdf:resource="#vlp_16_(velodyne)"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#unknown">
+<owl:Class rdf:about="#point cloud processing lidar">
   <rdfs:subClassOf rdf:resource="#Category"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#pv rcnn"/>
+      <owl:someValuesFrom rdf:resource="#pv_rcnn"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -250,435 +267,643 @@
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#pointr cnn"/>
+      <owl:someValuesFrom rdf:resource="#pc_rcnn"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#pv rcnn">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pointpillars">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pointr cnn">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#hmetc mechanical lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#hmetc solid state lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velarray">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#waymo's mechanically spinning lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld m1 cube">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne velarray h800 pro">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#innoviz range">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld cube">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#livox robosense">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne velarray">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lidar sensor">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#no specific brand model mentioned (assumed to be a velodyne sensor as commonly used in industrial applications)">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#innoviz pro">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld cube range">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#robosense m1">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#innovizpro">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#surveying industrial lidar">
+<owl:Class rdf:about="#lidar sensors in state of the art">
   <rdfs:subClassOf rdf:resource="#Category"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#robosense m1"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#livox horizon"/>
+      <owl:someValuesFrom rdf:resource="#hmetc"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#lidar">
+<owl:Class rdf:about="#optical phased array lidar">
   <rdfs:subClassOf rdf:resource="#Category"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_sensor"/>
-      <owl:someValuesFrom rdf:resource="#velodyne"/>
+      <owl:someValuesFrom rdf:resource="#flash_lidars"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#optical_phased_array_lidars"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#velodyne velarray h800">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
+<owl:Class rdf:about="#industrial surveying lidar">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#hmetc_lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#blickfeld cube sensors 2022">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
+<owl:Class rdf:about="#unknown">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#lidar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#category1">
-  <rdf:type rdf:resource="#Category"/>
+<owl:Class rdf:about="#uncategorized">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#not_mentioned"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#autonomous vehicle lidar">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#velodyne_hdl_64e"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#quanergy_m8"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_sensor"/>
+      <owl:someValuesFrom rdf:resource="#ouster_os1_64"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#velodyne_hdl_64e">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor1">
+<owl:NamedIndividual rdf:about="#laser_module">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spinning_mechanism">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#riegl_vq_880_g">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor2">
+<owl:NamedIndividual rdf:about="#velodyne_lidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lidar_lite_v3">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category2">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category3">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor3">
+<owl:NamedIndividual rdf:about="#rplidar_a1m8">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category4">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor4">
+<owl:NamedIndividual rdf:about="#rplidar_s1">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category5">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor5">
+<owl:NamedIndividual rdf:about="#hesai_pandar40">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category6">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#bijelic_et_al.'s_tested_lidar_sensors">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor6">
+<owl:NamedIndividual rdf:about="#point_cloud_sensors">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#fixed_position_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#control_unit">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fixed_position_mechanism">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pv_rcnn">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pointpillars">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pc_rcnn">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#voxel_based_feature_extraction_module"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#voxel_based_feature_extraction_module">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_vls_128">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#waymo_lidar">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category7">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor7">
+<owl:NamedIndividual rdf:about="#a_360_°_rotary_lidar">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category8">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#hmetc">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#micro_mirrors_with_mems_technology"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#moving_rotating_mirror_or_lens_parts"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor8">
+<owl:NamedIndividual rdf:about="#micro_mirrors_with_mems_technology">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#moving_rotating_mirror_or_lens_parts">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#flash_lidars">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category9">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor9">
+<owl:NamedIndividual rdf:about="#optical_phased_array_lidars">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category10">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#waymo's_360°_mechanically_spinning_lidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor10">
+<owl:NamedIndividual rdf:about="#hmetc_lidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern_adjustment_system"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#scan_pattern_adjustment_system">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2022_lidar_sensor">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#xlidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lidar">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category11">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#hesai_pandar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor11">
+<owl:NamedIndividual rdf:about="#vehicle_lidar_sensor">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category12">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#blickfeld_cube">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#zoom_lens"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor12">
+<owl:NamedIndividual rdf:about="#innoviz_pro">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category13">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#zoom_lens">
+  <rdf:type rdf:resource="#Part"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor13">
+<owl:NamedIndividual rdf:about="#blickfeld_cube_range">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#velodyne_velarray">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#robosense_m1">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#innovizpro">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category14">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#livox_horizon">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#integrated_imu"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor14">
+<owl:NamedIndividual rdf:about="#velodyne_velarray_h800">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#scan_pattern_mechanism">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#blickfeld_cube_sensors">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#integrated_imu">
+  <rdf:type rdf:resource="#Part"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#riegl_lidar">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category15">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#hesai_lidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor15">
+<owl:NamedIndividual rdf:about="#luminar_lidar">
+  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#not_mentioned">
   <rdf:type rdf:resource="#Sensor"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category16">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor16">
+<owl:NamedIndividual rdf:about="#vlp_16_(velodyne)">
   <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#control_unit"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category17">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor17">
+<owl:NamedIndividual rdf:about="#hesai_pandar_64t">
   <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#optical_system"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category18">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#optical_system">
+  <rdf:type rdf:resource="#Part"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor18">
+<owl:NamedIndividual rdf:about="#quanergy_m8">
   <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#solid_state_lidar_chipset"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#category19">
-  <rdf:type rdf:resource="#Category"/>
+<owl:NamedIndividual rdf:about="#solid_state_lidar_chipset">
+  <rdf:type rdf:resource="#Part"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#sensor19">
+<owl:NamedIndividual rdf:about="#ouster_os1_64">
   <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category20">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor20">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category21">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor21">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category22">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor22">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category23">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor23">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category24">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor24">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category25">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor25">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category26">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor26">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category27">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor27">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category28">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor28">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category29">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor29">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category30">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor30">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category31">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor31">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category32">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor32">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category33">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor33">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category34">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor34">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category35">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor35">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category36">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor36">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category37">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor37">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category38">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor38">
-  <rdf:type rdf:resource="#Sensor"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#category39">
-  <rdf:type rdf:resource="#Category"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#sensor39">
-  <rdf:type rdf:resource="#Sensor"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdf:type>
 </owl:NamedIndividual>
 
 

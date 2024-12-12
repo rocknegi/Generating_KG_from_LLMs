@@ -1,0 +1,400 @@
+{
+    "sensors": [
+        {
+            "name": "velodyne hdl 64e",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "riegl vq 880 g",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne lidar",
+            "category": "",
+            "parts": []
+        },
+        {
+            "name": "lidar lite v3",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "rplidar a1m8",
+            "category": "",
+            "parts": []
+        },
+        {
+            "name": "rplidar s1",
+            "category": "",
+            "parts": []
+        },
+        {
+            "name": "hesai pandar40",
+            "category": "",
+            "parts": []
+        },
+        {
+            "name": "bijelic et al.'s tested lidar sensors",
+            "category": "industrial lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "point cloud sensors",
+            "category": "surveying lidar",
+            "parts": [
+                "control unit",
+                "fixed position mechanism"
+            ]
+        },
+        {
+            "name": "pv rcnn",
+            "category": "point cloud processing lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "pointpillars",
+            "category": "point cloud processing lidar",
+            "parts": [
+                "laser module",
+                "control unit"
+            ]
+        },
+        {
+            "name": "pc rcnn",
+            "category": "point cloud processing lidar",
+            "parts": [
+                "laser module",
+                "voxel based feature extraction module"
+            ]
+        },
+        {
+            "name": "velodyne vls 128",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "waymo lidar",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "a 360 ° rotary lidar",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "hmetc",
+            "category": "lidar sensors in state of the art",
+            "parts": [
+                "micro mirrors with mems technology",
+                "moving rotating mirror or lens parts"
+            ]
+        },
+        {
+            "name": "flash lidars",
+            "category": "optical phased array lidar",
+            "parts": []
+        },
+        {
+            "name": "optical phased array lidars",
+            "category": "optical phased array lidar",
+            "parts": []
+        },
+        {
+            "name": "waymo's 360° mechanically spinning lidar",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "velodyne lidar",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "hmetc lidar",
+            "category": "industrial surveying lidar",
+            "parts": [
+                "laser module",
+                "scan pattern adjustment system"
+            ]
+        },
+        {
+            "name": "2022 lidar sensor",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "xlidar",
+            "category": "surveying lidar",
+            "parts": [
+                "control unit"
+            ]
+        },
+        {
+            "name": "lidar",
+            "category": "unknown",
+            "parts": []
+        },
+        {
+            "name": "hesai pandar",
+            "category": "industrial lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism",
+                "control unit"
+            ]
+        },
+        {
+            "name": "vehicle lidar sensor",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "innoviz pro",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism",
+                "zoom lens"
+            ]
+        },
+        {
+            "name": "blickfeld cube range",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "blickfeld cube range",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "innovizpro",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1",
+            "category": "industrial lidar",
+            "parts": []
+        },
+        {
+            "name": "livox horizon",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne velarray h800",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism",
+                "control unit"
+            ]
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism",
+                "control unit"
+            ]
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "control unit"
+            ]
+        },
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "scan pattern mechanism"
+            ]
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": [
+                "spinning mechanism",
+                "control unit"
+            ]
+        },
+        {
+            "name": "blickfeld cube sensors",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": [
+                "integrated imu"
+            ]
+        },
+        {
+            "name": "velodyne velarray h800",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "velodyne lidar",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "riegl lidar",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "hesai lidar",
+            "category": "industrial lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "luminar lidar",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "not mentioned",
+            "category": "uncategorized",
+            "parts": []
+        },
+        {
+            "name": "vlp 16 (velodyne)",
+            "category": "industrial lidar",
+            "parts": [
+                "laser module",
+                "control unit"
+            ]
+        },
+        {
+            "name": "hesai pandar 64t",
+            "category": "surveying lidar",
+            "parts": [
+                "laser module",
+                "optical system"
+            ]
+        },
+        {
+            "name": "velodyne hdl 64e",
+            "category": "autonomous vehicle lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "quanergy m8",
+            "category": "autonomous vehicle lidar",
+            "parts": [
+                "solid state lidar chipset"
+            ]
+        },
+        {
+            "name": "ouster os1 64",
+            "category": "autonomous vehicle lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        }
+    ]
+}
