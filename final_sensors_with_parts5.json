@@ -1,0 +1,101 @@
+{
+    "sensors": [
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "velodyne hdl-64e",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "non-rotary lidar sensors (not specific brand)",
+            "category": "non-rotary lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "static square meter reference plane lidar",
+            "parts": []
+        },
+        {
+            "name": "velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "innoviz pro",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1",
+            "category": "industrial surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "livox horizon",
+            "category": "surveying industrial lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube range",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "livox",
+            "category": "industrial lidar",
+            "parts": [
+                "scan pattern design"
+            ]
+        }
+    ]
+}

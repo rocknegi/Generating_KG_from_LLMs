@@ -1,0 +1,92 @@
+{
+    "sensors": [
+        {
+            "name": "livox horizon",
+            "category": "surveying lidar",
+            "parts": [
+                "beams"
+            ]
+        },
+        {
+            "name": "velodyne hdl 64e",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "velarray",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "velodyne hdl 64e",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module",
+                "spinning mechanism"
+            ]
+        },
+        {
+            "name": "velodyne velarray",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "robosense m1",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "livox horizon",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "industrial robotics lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "blickfeld cube range",
+            "category": "industrial robotics lidar",
+            "parts": []
+        },
+        {
+            "name": "innoviz pro",
+            "category": "automotive lidar",
+            "parts": [
+                "laser module"
+            ]
+        },
+        {
+            "name": "blickfeld cube",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "blickfeld cube range",
+            "category": "surveying lidar",
+            "parts": []
+        },
+        {
+            "name": "innoviz pro",
+            "category": "automotive lidar",
+            "parts": []
+        },
+        {
+            "name": "robosense m1 livox horizon",
+            "category": "industrial surveying lidar",
+            "parts": []
+        }
+    ]
+}
