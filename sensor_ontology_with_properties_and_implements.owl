@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/sensor_ontology.owl"
+         xmlns="http://example.org/sensor_ontology.owl#">
+
+<owl:Ontology rdf:about="http://example.org/sensor_ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_part_directly">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#implements">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Technology"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_property">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#category"/>
+
+<owl:Class rdf:about="#Sensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_velarray">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#horizontal_fov:_120°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vertical_fov:_25°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#robosense_m1">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#horizontal_fov:_120°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vertical_fov:_25°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#gnss"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vertical_resolution:_higher_than_velodyne_velarray"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#livox_horizon">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#horizontal_fov:_72°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vertical_fov:_30°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_200m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surveying_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#horizon_m1_cube">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#cube_range">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#h800_pro">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_hdl-64e">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_100m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution:_0.2_degrees"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#gnss"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#ins"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_not_mentioned"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution:_not_mentioned"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_module">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#spinning_mechanism">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#blickfeld_cube">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surveying_lidar</category>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#innoviz_pro">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#velarray">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial_lidar</category>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#blickfeld_cube_range">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#range_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field_of_view:_narrow"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surveying_lidar</category>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Technology">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#range:_100m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#resolution:_0.2_degrees">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gnss">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ins">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quanergy_m8">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_100m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution:_0.1_degrees"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#resolution:_0.1_degrees">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ibeo_lux">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_200m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution:_0.1_degrees"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#gnss"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#range:_200m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#leddartech_m16">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spinning_mechanism"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range:_150m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution:_0.2_degrees"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#range:_150m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#range:_not_mentioned">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#resolution:_not_mentioned">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#horizontal_fov:_120°">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vertical_fov:_25°">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#horizontal_fov:_72°">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vertical_fov:_30°">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#range_module">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#field_of_view:_narrow">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vertical_resolution:_higher_than_velodyne_velarray">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+
+</rdf:RDF>
