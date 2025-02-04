@@ -1,0 +1,175 @@
+{
+  "sensors": [
+    {
+      "name": "velodyne velarray",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "frame_rate: >5 hz",
+        "horizontal_fov: [inferred] ~81.7°",
+        "range: [inferred] ~260m @ 10% reflectivity",
+        "scan_pattern: non-repetitive"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "frame_rate: >5 hz",
+        "horizontal_fov: [inferred] ~81.7°",
+        "range: [inferred] ~260m @ 10% reflectivity",
+        "scan_pattern: non-repetitive"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "velodyne hdl-64e",
+      "category": "lidar sensor",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "field_of_view: 0.08°",
+        "range: 120m"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "[inferred] non-rotary lidar sensor",
+      "category": "lidar sensor",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "field_of_view: 81.7°",
+        "range: 260m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "velodyne hdl-64e",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "horizontal_fov: 81.7°",
+        "range: 260m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "horizontal_fov: 81.7°",
+        "range: 260m @ 10% reflectivity",
+        "scan_pattern: non-repetitive"
+      ],
+      "implements": [
+        "autosar",
+        "ros2"
+      ]
+    },
+    {
+      "name": "velodyne hdl-64e",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "fps_adjustable: [inferred]",
+        "horizontal_fov: 81.7°",
+        "range: 260m @ 10% reflectivity",
+        "scan_pattern: non-repetitive"
+      ],
+      "implements": [
+        "autosar",
+        "ros2"
+      ]
+    },
+    {
+      "name": "velodyne velarray",
+      "category": "automotive lidar",
+      "parts": [
+        "imu/gps system",
+        "rotating assembly (mems-based)"
+      ],
+      "properties": [
+        "horizontal_fov: 81.7°",
+        "range: 200m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "[inferred] velodyne hdl-64e",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 120m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "robosense m1",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "horizontal_fov: 81.7°",
+        "range: 260m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [
+        "905nm laser array",
+        "mems mirror"
+      ],
+      "properties": [
+        "horizontal_fov: 81.7°",
+        "range: 260m @ 10% reflectivity"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    }
+  ]
+}
