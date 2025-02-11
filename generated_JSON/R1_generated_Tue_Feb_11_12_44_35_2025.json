@@ -1,0 +1,264 @@
+{
+  "sensors": [
+    {
+      "name": "",
+      "category": "",
+      "parts": [],
+      "properties": [
+        "across-track point spacing [m]",
+        "along-track point spacing [m]",
+        "elevation precision at 1km (2 sigma) [cm]",
+        "laser pulse characteristics: wavelength [mm], pulse length [ns], beam divergence (across/along tr.) [mrad]",
+        "max. # of points/m2",
+        "overall planimetric precision (2 sigma) [cm]",
+        "pointing precision (roll/pitch/heading) [deg]",
+        "range precision (2 sigma) [cm]"
+      ],
+      "implements": []
+    },
+    {
+      "name": "riegl lms lms-q240i-60/lms-q240i-80",
+      "category": "aerial lidar",
+      "parts": [
+        "ins/gps",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad (with 1 mrad option)",
+        "frequency range: 10-160hz",
+        "power consumption: 43w",
+        "pulse duration: <4ns",
+        "scan rate: 6-80hz",
+        "wavelength: 1,500nm",
+        "weight: 7kg; 18 x 37cm [lxw]"
+      ],
+      "implements": []
+    },
+    {
+      "name": "riegl lms lms-s560-i/ lms-s560-a",
+      "category": "aerial lidar",
+      "parts": [
+        "ins/gps",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad (with 1 mrad option)",
+        "frequency range: 10-160hz",
+        "power consumption: 120w",
+        "pulse duration: <4ns",
+        "scan rate: 25khz to 200khz",
+        "wavelength: 1,500nm",
+        "weight: 20kg; 56 x 20 x 22cm [lxw]"
+      ],
+      "implements": []
+    },
+    {
+      "name": "riegl lms lms-q560",
+      "category": "aerial lidar",
+      "parts": [
+        "ins/gps",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad (with 1 mrad option)",
+        "frequency range: 10-160hz",
+        "power consumption: 120w",
+        "pulse duration: <4ns",
+        "scan rate: 25khz to 200khz",
+        "wavelength: 1,500nm",
+        "weight: 20kg; 56 x 20 x 22cm [lxw]"
+      ],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "",
+      "parts": [
+        "applanix posav 310",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 2.7mrad class 1",
+        "current: 13 a max",
+        "laser wavelength: 900nm",
+        "operation voltage: 28 v dc",
+        "positioning accuracy: 5cm (applanix posav 310)",
+        "pulse period: <10ns",
+        "rotating speed: 6-80hz or 5-60hz"
+      ],
+      "implements": []
+    },
+    {
+      "name": "topeye mk ii",
+      "category": "high-end system",
+      "parts": [
+        "fiber scanner",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "power consumption: 28 v dc",
+        "range: up to 50,000m",
+        "resolution: 0.008/0.015°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "palmer scanner",
+      "category": "high-end system",
+      "parts": [
+        "mechanical system",
+        "receiver aperture"
+      ],
+      "properties": [
+        "frequency: 0-75hz",
+        "range: up to 40m"
+      ],
+      "implements": []
+    },
+    {
+      "name": "falcon iii",
+      "category": "high-end system",
+      "parts": [
+        "full waveform processing",
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "power consumption: 28 v dc",
+        "range: up to 50,000m",
+        "resolution: 0.008/0.015°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "applanix posav 510",
+      "category": "high-end system",
+      "parts": [
+        "gps pos",
+        "ins precision"
+      ],
+      "properties": [
+        "accuracy: 5-30cm (horizontal)",
+        "resolution: 0.005/0.008°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [
+        "pulses: 167,000"
+      ],
+      "implements": []
+    },
+    {
+      "name": "fli-map 400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "altm gemini",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [
+        "pulses: 167,000"
+      ],
+      "implements": []
+    },
+    {
+      "name": "fugro fli-map 400",
+      "category": "lidar sensor",
+      "parts": [
+        "gps precision",
+        "ins system",
+        "oscillating mirror",
+        "pulse frequency",
+        "rotating mirror"
+      ],
+      "properties": [
+        "[inferred] across-track point spacing: n/a",
+        "[inferred] along-track point spacing: n/a",
+        "[inferred] beam divergence (across/along tr.): 0.45 mrad (radial)",
+        "[inferred] dimensions: 50 x 30 x 30cm ~100kg",
+        "[inferred] dynamic range of intensity signal: 11 bits",
+        "[inferred] gps precision planimetric/height (2 sigma): 5 / 10cm (2 sigma)",
+        "[inferred] ins precision (roll/pitch/heading): n/a",
+        "[inferred] laser wavelength: 1,500nm",
+        "[inferred] max. # of points/m2: n/a",
+        "[inferred] max. scan angle: 60 deg",
+        "[inferred] overall planimetric precision (2 sigma): 2-3 cm",
+        "[inferred] pointing precision (roll/pitch/heading): 0.008 / 0.008 / 0.015 deg",
+        "[inferred] power requirements: 24v /30w",
+        "[inferred] pulse length: 4ns",
+        "[inferred] pulse sampling frequency: 250,000hz",
+        "[inferred] range precision (2 sigma): 2-3 cm",
+        "[inferred] scan frequency: 150hz",
+        "[inferred] total system weight: ~100kg",
+        "[inferred] weight: 30kg"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "optech altm gemini",
+      "category": "industrial lidar",
+      "parts": [
+        "applanix dss",
+        "control rack",
+        "pos 610",
+        "rollei 39 mpixel"
+      ],
+      "properties": [
+        "current: 35 a (maximum)",
+        "prf rate: 167khz",
+        "range: 200m to 4km max",
+        "size: 26 x 19 x 57cm",
+        "weight: 23.4kg"
+      ],
+      "implements": [
+        "fcms flight-management system"
+      ]
+    },
+    {
+      "name": "velodyne vlp-32c",
+      "category": "airborne lidar",
+      "parts": [
+        "mirror"
+      ],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "airborne lidar",
+      "parts": [
+        "mirror"
+      ],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "fli-map 400",
+      "category": "airborne lidar",
+      "parts": [
+        "mirror"
+      ],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "altm gemini",
+      "category": "airborne lidar",
+      "parts": [
+        "mirror"
+      ],
+      "properties": [
+        "pulse rate"
+      ],
+      "implements": []
+    }
+  ]
+}
