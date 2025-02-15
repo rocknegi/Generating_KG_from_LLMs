@@ -1,0 +1,245 @@
+[
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.7572372555732727,
+    "semantic_match": true,
+    "confidence": 0.6271711766719819
+  },
+  {
+    "sensor": "velodyne vlp-32c",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.6240322589874268,
+    "semantic_match": false,
+    "confidence": 0.38820967769622805
+  },
+  {
+    "sensor": "ouster os2",
+    "string_match": false,
+    "fuzzy_score": 6,
+    "fuzzy_match": false,
+    "semantic_score": 0.6472650766372681,
+    "semantic_match": false,
+    "confidence": 0.2121795229911804
+  },
+  {
+    "sensor": "livox horizon",
+    "string_match": false,
+    "fuzzy_score": 12,
+    "fuzzy_match": false,
+    "semantic_score": 0.6681192517280579,
+    "semantic_match": true,
+    "confidence": 0.23643577551841735
+  },
+  {
+    "sensor": "lidar sensors",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.7435684204101562,
+    "semantic_match": true,
+    "confidence": 0.9230705261230469
+  },
+  {
+    "sensor": "velodyne vlp-32c",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.6240322589874268,
+    "semantic_match": false,
+    "confidence": 0.38820967769622805
+  },
+  {
+    "sensor": "ouster os2",
+    "string_match": false,
+    "fuzzy_score": 6,
+    "fuzzy_match": false,
+    "semantic_score": 0.6472650766372681,
+    "semantic_match": false,
+    "confidence": 0.2121795229911804
+  },
+  {
+    "sensor": "velodyne vlp-32c",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.5891490578651428,
+    "semantic_match": false,
+    "confidence": 0.37774471735954285
+  },
+  {
+    "sensor": "lms400-2000",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6632431149482727,
+    "semantic_match": true,
+    "confidence": 0.8989729344844818
+  },
+  {
+    "sensor": "lms511 pro sr",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.621841549873352,
+    "semantic_match": false,
+    "confidence": 0.8865524649620056
+  },
+  {
+    "sensor": "utm-30lx-ew",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6082384586334229,
+    "semantic_match": false,
+    "confidence": 0.8824715375900268
+  },
+  {
+    "sensor": "riegl vz-400",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6525392532348633,
+    "semantic_match": true,
+    "confidence": 0.8957617759704589
+  },
+  {
+    "sensor": "lms111",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6521681547164917,
+    "semantic_match": true,
+    "confidence": 0.8956504464149475
+  },
+  {
+    "sensor": "utm-30lx",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6162922382354736,
+    "semantic_match": false,
+    "confidence": 0.8848876714706421
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.7432018518447876,
+    "semantic_match": true,
+    "confidence": 0.6229605555534363
+  },
+  {
+    "sensor": "general lidar",
+    "string_match": false,
+    "fuzzy_score": 56,
+    "fuzzy_match": false,
+    "semantic_score": 0.744758665561676,
+    "semantic_match": true,
+    "confidence": 0.3914275996685028
+  },
+  {
+    "sensor": "velodyne vlp-16",
+    "string_match": false,
+    "fuzzy_score": 85,
+    "fuzzy_match": true,
+    "semantic_score": 0.6444183588027954,
+    "semantic_match": false,
+    "confidence": 0.4483255076408386
+  },
+  {
+    "sensor": "riegl vux-1uav",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6483566761016846,
+    "semantic_match": false,
+    "confidence": 0.8945070028305053
+  },
+  {
+    "sensor": "lms511-10100 pro",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6435503959655762,
+    "semantic_match": false,
+    "confidence": 0.8930651187896728
+  },
+  {
+    "sensor": "hdl-32",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6342718601226807,
+    "semantic_match": false,
+    "confidence": 0.8902815580368042
+  },
+  {
+    "sensor": "faro focus x330",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6000900268554688,
+    "semantic_match": false,
+    "confidence": 0.8800270080566406
+  },
+  {
+    "sensor": "velodyne",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.612619161605835,
+    "semantic_match": false,
+    "confidence": 0.8837857484817504
+  },
+  {
+    "sensor": "ouster os2",
+    "string_match": false,
+    "fuzzy_score": 6,
+    "fuzzy_match": false,
+    "semantic_score": 0.6472650766372681,
+    "semantic_match": false,
+    "confidence": 0.2121795229911804
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.6227664947509766,
+    "semantic_match": false,
+    "confidence": 0.586829948425293
+  },
+  {
+    "sensor": "lidar",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.7571728229522705,
+    "semantic_match": true,
+    "confidence": 0.9271518468856811
+  },
+  {
+    "sensor": "velodyne hdl64-s3",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6212143898010254,
+    "semantic_match": false,
+    "confidence": 0.8863643169403076
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.7572372555732727,
+    "semantic_match": true,
+    "confidence": 0.6271711766719819
+  }
+]
