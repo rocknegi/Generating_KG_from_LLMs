@@ -1,0 +1,162 @@
+{
+  "sensors": [
+    {
+      "name": "riegl lms q240i-60/lms-q240i-80",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "range: 200m",
+        "resolution: 0.08°"
+      ],
+      "implements": [
+        "ieee 802.11p"
+      ]
+    },
+    {
+      "name": "riegl lms s560-i/lms-s560-a",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "range: 30m to 500m or 1,000m"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "toposys gmbh harrier",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "current: 13 a max",
+        "rotation rate: 6 - 80hz / 5 - 60hz",
+        "voltage: 28 v dc",
+        "wavelength: 900nm < 10ns"
+      ],
+      "implements": []
+    },
+    {
+      "name": "applanix posav 310",
+      "category": "industrial lidar",
+      "parts": [],
+      "properties": [
+        "accuracy: 5 - 30cm",
+        "precision: 0.015/0.015/0.035 deg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "leica fpes",
+      "category": "industrial lidar",
+      "parts": [
+        "oscillating mirror",
+        "pos 610"
+      ],
+      "properties": [
+        "power consumption: 35 a (maximum)",
+        "prf rate: 167khz",
+        "pulse repetition frequency: 7ns",
+        "wavelength: 1,060nm",
+        "weight: 95kg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "leica als post processor",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "rotation speed: 6 - 80hz or 5 - 60hz"
+      ],
+      "implements": []
+    },
+    {
+      "name": "optech altm gemini",
+      "category": "industrial lidar",
+      "parts": [
+        "frame cameras"
+      ],
+      "properties": [
+        "power consumption: 13 a maximum",
+        "pulse width: <10ns",
+        "wavelength: 900nm",
+        "weight: <10kg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "applanix dss",
+      "category": "industrial lidar",
+      "parts": [
+        "posav 310"
+      ],
+      "properties": [
+        "accuracy: applanix posav 310 precision 3cm",
+        "pos pac ins: 3cm 15cm n.a."
+      ],
+      "implements": []
+    },
+    {
+      "name": "trackair toppit",
+      "category": "industrial lidar",
+      "parts": [
+        "pos 610",
+        "posav 310"
+      ],
+      "properties": [
+        "accuracy: applanix pos/pac ins precision 3cm",
+        "pos pac ins: 0.015/0.015/0.035 deg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "airborne lidar",
+      "parts": [
+        "attitude determination",
+        "guidance positioning",
+        "sensormanagement systems"
+      ],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "fli-map 400",
+      "category": "airborne lidar",
+      "parts": [
+        "in-house developed system"
+      ],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "fli-map 400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "altm gemini",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    }
+  ]
+}
