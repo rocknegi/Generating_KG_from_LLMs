@@ -41,878 +41,168 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:Class rdf:about="#automotive_lidar">
+<owl:Class rdf:about="#airborne lidar">
   <rdfs:subClassOf rdf:resource="#Sensor"/>
 </owl:Class>
 
-<owl:Class rdf:about="#velodyne_vlp-32c">
-  <rdfs:subClassOf rdf:resource="#automotive_lidar"/>
+<owl:Class rdf:about="#riegl lms q240i-60/lms-q240i-80">
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view:_360°"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad with 1 mrad option"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#rotation_speed:_[2]"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: 1,500nm ,4 ns"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scanning_method:_[1]"/>
+      <owl:someValuesFrom rdf:resource="#range: 2m / 200m / 350m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#riegl dr560"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#rotating_mirror">
+<owl:Class rdf:about="#rotating multi-facet mirror">
   <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#field_of_view:_360°">
+<owl:Class rdf:about="#angular resolution: 0.3 mrad with 1 mrad option">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#rotation_speed:_[2]">
+<owl:Class rdf:about="#laser wavelength: 1,500nm ,4 ns">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#scanning_method:_[1]">
+<owl:Class rdf:about="#range: 2m / 200m / 350m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#livox_horizon">
-  <rdfs:subClassOf rdf:resource="#automotive_lidar"/>
+<owl:Class rdf:about="#riegl dr560">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#riegl lms-s560-i/ lms-s560-a">
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view:_360°"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad with 1 mrad option"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#rotation_speed:_[2]"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: 1,500nm ,4 ns"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scanning_method:_[1]"/>
+      <owl:someValuesFrom rdf:resource="#range: 30m / 500m / 1000m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#igi winmp/ trackair rianalyze 560"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#airborne_lidar">
+<owl:Class rdf:about="#range: 30m / 500m / 1000m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#igi winmp/ trackair rianalyze 560">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#riegl lms-q560">
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad with 1 mrad option"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: 1,500nm ,4 ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range: 30m / 500m / 1000m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#riegl dr560"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#industrial lidar">
   <rdfs:subClassOf rdf:resource="#Sensor"/>
 </owl:Class>
 
-<owl:Class rdf:about="#riegl_lms-q240i-60">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
+<owl:Class rdf:about="#toposys gmbh harrier">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_43_w"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 30,000 to 60 degrees"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_120m"/>
+      <owl:someValuesFrom rdf:resource="#power: 28 v dc, 13 a max"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.3_mrad_(with_1_mrad_option)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,500nm_<4_ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#rotating_multi-facet_mirror">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#power_consumption:_43_w">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_120m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution:_0.3_mrad_(with_1_mrad_option)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#wavelength:_1,500nm_<4_ns">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-q240i-80">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_43_w"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_120m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.3_mrad_(with_1_mrad_option)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,500nm_<4_ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-s560-i">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_120_w"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_up_to_200,000hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.3_mrad_(with_1_mrad_option)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,500nm_<4_ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#power_consumption:_120_w">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_up_to_200,000hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-s560-a">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_120_w"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_up_to_200,000hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.3_mrad_(with_1_mrad_option)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,500nm_<4_ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#industrial_lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#[inferred]">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#frame_cameras"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rgb/cir_line_scanner"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view:_60°/80°"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#precision:_3cm_(ins)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_>8_hrs_(ups)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#frame_cameras">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#rgb/cir_line_scanner">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#field_of_view:_60°/80°">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#precision:_3cm_(ins)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_>8_hrs_(ups)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#general_lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#fugro_fli-map_400_q1-2006">
-  <rdfs:subClassOf rdf:resource="#general_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#beam_divergence:_0.45_mrad"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#dynamic_range:_11_bits"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power:_24v_/30w"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_length:_4ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1500nm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#beam_divergence:_0.45_mrad">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#dynamic_range:_11_bits">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#power:_24v_/30w">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pulse_length:_4ns">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#wavelength:_1500nm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#leica_fpes">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#oscillating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view:_50_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pos_610"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_35_a_(maximum)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#prf_rate:_167khz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_repetition_frequency:_7ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,060nm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#weight:_95kg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#oscillating_mirror">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#field_of_view:_50_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_200m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#optech_altm_gemini">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#control_rack"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pos_610"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#angular_resolution:_0.0025/0.0025/0.005_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#prf:_167khz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#weight:_23.4kg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pos"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pos_accuracy:_0.0025/0.0025/0.005_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_repetition_frequency:_10hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m_to_2km_or_4km"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pulse_rate:_167,000_pulses_per_second"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#control_rack_size"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#oscillating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy:_0.0025/0.0025/0.005_deg_pos_pac"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#current:_35_a_(maximum)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#point_accuracy:_3cm_<_10cm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#prf_rate:_167khz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_duration:_7ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m_/_1km_to_2km_/_4km_max"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#temperature:_-10°c_to_35°c"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#voltage:_28_vdc"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#weight:_95kg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#167,000_pulses_per_second"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#frame_cameras"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#power_consumption:_13_a_maximum"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_width:_<10ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_900nm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#weight:_<10kg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#control_rack">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pos_610">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#angular_resolution:_0.0025/0.0025/0.005_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#prf:_167khz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#weight:_23.4kg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#litemapper_2400">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_rate:_167,000_pulses_per_second"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#attitude_determination"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#guidance_positioning"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#sensormanagement_systems"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#pulse_rate:_167,000_pulses_per_second">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#fli-map_400">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#in-house_developed_system"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#toposys_lidar_system">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#altm_gemini">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_rate:_167,000_pulses_per_second"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms_q240i-60">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms_q240i-80">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-s560">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-s560_system">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-q560">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lidar">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-q240i-60/lms-q240i-80">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#angular_resolution:_0.3_mrad"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frequency_range:_10_-_60hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#angular_resolution:_0.3_mrad">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#frequency_range:_10_-_60hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms-s560-i/lms-s560-a">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#angular_resolution:_0.3_mrad_with_1_mrad_option"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#bit_depth:_16_bits"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frequency_range:_10_-_160hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#processing_speed:_practically_unlimited_(1ghz)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_30m_/_500m_/_1000m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#sample_rate:_up_to_200,000hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#angular_resolution:_0.3_mrad_with_1_mrad_option">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#bit_depth:_16_bits">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#frequency_range:_10_-_160hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#processing_speed:_practically_unlimited_(1ghz)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_30m_/_500m_/_1000m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#sample_rate:_up_to_200,000hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#">
-  <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#applanix_posav_310">
-  <rdfs:subClassOf rdf:resource="#"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#frame_cameras"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#0.5_(@150m,_150km/h)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#0.7m_(@150m,_150km/h)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#15cm_precision"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#3cm_accuracy"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#8_bits_(applanix_posav_310)"/>
+      <owl:someValuesFrom rdf:resource="#wavelength: 900nm , 10ns"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -921,38 +211,17 @@
       <owl:someValuesFrom rdf:resource="#ros2"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy:_5_-_30cm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#precision:_0.015/0.015/0.035_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#0.5_(@150m,_150km/h)">
+<owl:Class rdf:about="#field of view: 30,000 to 60 degrees">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#0.7m_(@150m,_150km/h)">
+<owl:Class rdf:about="#power: 28 v dc, 13 a max">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#15cm_precision">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#3cm_accuracy">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#8_bits_(applanix_posav_310)">
+<owl:Class rdf:about="#wavelength: 900nm , 10ns">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
@@ -960,596 +229,827 @@
   <rdfs:subClassOf rdf:resource="#Technology"/>
 </owl:Class>
 
-<owl:Class rdf:about="#pos">
+<owl:Class rdf:about="#applanix posav 310">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy: 0.015/0.035 deg"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#precision: 3cm (ins)"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 360°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#temperature range: 0 to +50°c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy: 0.015/0.035 deg">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#precision: 3cm (ins)">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#topeye mk ii">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#rotating assembly"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 1mrad"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 3b 40m at low effect"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse duration: 4ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#wavelength: 1,064nm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#rotating assembly">
   <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#pos_accuracy:_0.0025/0.0025/0.005_deg">
+<owl:Class rdf:about="#angular resolution: 1mrad">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#pulse_repetition_frequency:_10hz">
+<owl:Class rdf:about="#field of view: 3b 40m at low effect">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#range:_200m_to_2km_or_4km">
+<owl:Class rdf:about="#pulse duration: 4ns">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#applanix_dss">
-  <rdfs:subClassOf rdf:resource="#lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pos"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pos_accuracy:_0.0025/0.0025/0.005_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#prf:_167khz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_repetition_frequency:_10hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m_to_2km_or_4km"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#posav_310"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy:_applanix_posav_310_precision_3cm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pos_pac_ins:_3cm_15cm_n.a."/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#igi_litemapper_2400">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#airborne_lidar_terrain_mapping_system"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#airborne_lidar_terrain_mapping_system">
+<owl:Class rdf:about="#wavelength: 1,064nm">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#fugro_fli-map_400">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf rdf:resource="#corridor_mapping"/>
+<owl:Class rdf:about="#palmer scanner">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fiber_/_class_1_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#oscillating_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_mirror"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#maximum range: 50,000 +/- 20 deg"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#beam_divergence_(across/along_tr.):_0.45_mrad"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#comparative_range:_outperforms_ouster_os2_in_range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pulse_length:_4ns"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_precision_(2_sigma):_0.46m_agl"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_1,500nm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#[inferred]"/>
+      <owl:someValuesFrom rdf:resource="#scan rate: 0-75hz"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#corridor_mapping">
+<owl:Class rdf:about="#maximum range: 50,000 +/- 20 deg">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scan rate: 0-75hz">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#falcon iii">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3mrad with up to 1mrad option"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse duration: ,4ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scan rate: 10 - 160hz"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#wavelength: 1,550nm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#angular resolution: 0.3mrad with up to 1mrad option">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulse duration: ,4ns">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scan rate: 10 - 160hz">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#wavelength: 1,550nm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#harrier 56">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3mrad with up to 1mrad option"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse duration: ,4ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scan rate: 10 - 160hz"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#wavelength: 1,550nm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#pos av 510">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#ins precision"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy: 5 - 30cm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ins precision">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy: 5 - 30cm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pos av 410">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#ins precision"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy: 5 - 30cm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aerial lidar">
   <rdfs:subClassOf rdf:resource="#Sensor"/>
 </owl:Class>
 
-<owl:Class rdf:about="#fiber_/_class_1_m">
+<owl:Class rdf:about="#leica fpes">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 360°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#field of view: 360°">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#altm gemini">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#0.0025/0.0025/0.005 deg pos pac"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#167khz prf"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#200m range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#airborne laser terrain mapper"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse rate: 167,000 pulses per second"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulses per second: 167,000"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#0.0025/0.0025/0.005 deg pos pac">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#167khz prf">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#200m range">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#optech altm gemini">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#0.0025/0.0025/0.005 deg pos pac"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#167khz prf"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#200m range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#applanix dss">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 360°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#temperature range: 0 to +50°c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#temperature range: 0 to +50°c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#trimble 610">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 360°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#temperature range: 0 to +50°c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#trackair t oppit">
+  <rdfs:subClassOf rdf:resource="#aerial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field of view: 360°"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#temperature range: 0 to +50°c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#litemapper 2400">
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#airborne lidar system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulses per second: 167,000"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne lidar system">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fli-map 400">
+  <rdfs:subClassOf rdf:resource="#airborne lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#lidar survey system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#detectable object size at 1000m: 3cm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#detectable object size at 200m: 8mm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar survey system">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne laser terrain mapper">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulse rate: 167,000 pulses per second">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fugro fli-map 400">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#oscillating mirror"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#rotating mirror"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#dimensions: 50 x 30 x 30cm ~100kg"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#laser pulse characteristics: wavelength=1,500nm, pulse length=4ns, beam divergence (across/along tr.)=0.45 mrad"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power requirements: 24v helicopter/fixed wing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#recording methodology: forward and downward-looking"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#oscillating mirror">
   <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#beam_divergence_(across/along_tr.):_0.45_mrad">
+<owl:Class rdf:about="#rotating mirror">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dimensions: 50 x 30 x 30cm ~100kg">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#comparative_range:_outperforms_ouster_os2_in_range">
+<owl:Class rdf:about="#laser pulse characteristics: wavelength=1,500nm, pulse length=4ns, beam divergence (across/along tr.)=0.45 mrad">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#range_precision_(2_sigma):_0.46m_agl">
+<owl:Class rdf:about="#power requirements: 24v helicopter/fixed wing">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#wavelength:_1,500nm">
+<owl:Class rdf:about="#recording methodology: forward and downward-looking">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#lidar_sensor">
+<owl:Class rdf:about="#">
   <rdfs:subClassOf rdf:resource="#Sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#topeye_mk_ii_[inferred]">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#palmer_scanner_[inferred]">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
-</owl:Class>
-
-<owl:Class rdf:about="#trimble_5700_l1/l2">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
+  <rdfs:subClassOf rdf:resource="#multipurpose lidar system"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse_rate: 35 a (maximum)"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_60m,_300m,_750m"/>
+      <owl:someValuesFrom rdf:resource="#temperature: -10°c to 35°c"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.005_deg,_0.008_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_60m,_300m,_750m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution:_0.005_deg,_0.008_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#honeywell_764_[inferred]">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_60m,_300m,_750m"/>
+      <owl:someValuesFrom rdf:resource="#voltage: 28 vdc"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.005_deg,_0.008_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#t_oposys_gmbh_falcon_iii_[inferred]">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fiber_scanner"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_60m,_800m,_1000m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.008/0.015_deg"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#fiber_scanner">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_60m,_800m,_1000m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution:_0.008/0.015_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#t_oposys_gmbh_harrier_56_[inferred]">
-  <rdfs:subClassOf rdf:resource="#lidar_sensor"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fiber_scanner"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_30m,_800m,_1000m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.3_mrad_(up_to_1mrad_option)"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_30m,_800m,_1000m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution:_0.3_mrad_(up_to_1mrad_option)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#control_rack_size">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy:_0.0025/0.0025/0.005_deg_pos_pac">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#current:_35_a_(maximum)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#point_accuracy:_3cm_<_10cm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#prf_rate:_167khz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pulse_duration:_7ns">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range:_200m_/_1km_to_2km_/_4km_max">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#temperature:_-10°c_to_35°c">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#voltage:_28_vdc">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#weight:_95kg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ingenieur-gesellschaft_für_interfaces_(igi)_litemapper_2400">
-  <rdfs:subClassOf rdf:resource="#airborne_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#[inferred]"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#167,000_pulses_per_second">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_lms_q240i-60/lms-q240i-80">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution:_0.08°"/>
+      <owl:someValuesFrom rdf:resource="#weight: 95kg"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_802.11p"/>
+      <owl:someValuesFrom rdf:resource="#ieee 802.11p"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#resolution:_0.08°">
+<owl:Class rdf:about="#trimble db950 l1/l2">
+  <rdfs:subClassOf rdf:resource="#"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#gps system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#ins system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#ins precision (roll/pitch/heading) [deg]"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#precision planimetric/height (2 sigma) [cm]: gps precision"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#gps system">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ins system">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ins precision (roll/pitch/heading) [deg]">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#ieee_802.11p">
+<owl:Class rdf:about="#precision planimetric/height (2 sigma) [cm]: gps precision">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#applanix posav 410">
+  <rdfs:subClassOf rdf:resource="#"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#gps/ins postprocessing software"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#precision and resolution: pointing precision (roll/pitch/heading) [deg], range precision (2 sigma) [cm], elevation precision at 1km (2 sigma) [cm]"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#gps/ins postprocessing software">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#precision and resolution: pointing precision (roll/pitch/heading) [deg], range precision (2 sigma) [cm], elevation precision at 1km (2 sigma) [cm]">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulses per second: 167,000">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#detectable object size at 1000m: 3cm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#detectable object size at 200m: 8mm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#multipurpose lidar system">
+  <rdfs:subClassOf rdf:resource="#Sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulse_rate: 35 a (maximum)">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#temperature: -10°c to 35°c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#voltage: 28 vdc">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight: 95kg">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ieee 802.11p">
   <rdfs:subClassOf rdf:resource="#Technology"/>
 </owl:Class>
 
-<owl:Class rdf:about="#riegl_lms_s560-i/lms-s560-a">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
+<owl:Class rdf:about="#riegl lms lms-q240i-60/lms-q240i-80">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range:_30m_to_500m_or_1,000m"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#class: class 1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#dimensions: [dia x l]: 18 x 37cm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: ,10ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power consumption: 43 w"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#weight: 7kg"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#range:_30m_to_500m_or_1,000m">
+<owl:Class rdf:about="#angular resolution: 0.3 mrad">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#toposys_gmbh_harrier">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
+<owl:Class rdf:about="#class: class 1">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dimensions: [dia x l]: 18 x 37cm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#laser wavelength: ,10ns">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#power consumption: 43 w">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight: 7kg">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#riegl lms lms-s560-i/">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#current:_13_a_max"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad (with 1 mrad option)"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#rotation_rate:_6_-_80hz_/_5_-_60hz"/>
+      <owl:someValuesFrom rdf:resource="#class: class 1"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#voltage:_28_v_dc"/>
+      <owl:someValuesFrom rdf:resource="#dimensions: [lxwxh]: 56 x 20 x 22cm"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#wavelength:_900nm_<_10ns"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: ,1500nm ,4 ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power consumption: 120 w"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#weight: 20kg"/>
     </owl:Restriction>
   </rdfs:subClassOf>
 </owl:Class>
 
-<owl:Class rdf:about="#current:_13_a_max">
+<owl:Class rdf:about="#angular resolution: 0.3 mrad (with 1 mrad option)">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#rotation_rate:_6_-_80hz_/_5_-_60hz">
+<owl:Class rdf:about="#dimensions: [lxwxh]: 56 x 20 x 22cm">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#voltage:_28_v_dc">
+<owl:Class rdf:about="#laser wavelength: ,1500nm ,4 ns">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#wavelength:_900nm_<_10ns">
+<owl:Class rdf:about="#power consumption: 120 w">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#accuracy:_5_-_30cm">
+<owl:Class rdf:about="#weight: 20kg">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#precision:_0.015/0.015/0.035_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#power_consumption:_35_a_(maximum)">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pulse_repetition_frequency:_7ns">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#wavelength:_1,060nm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#leica_als_post_processor">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
+<owl:Class rdf:about="#riegl lms lms-q560">
+  <rdfs:subClassOf rdf:resource="#industrial lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#rotating_multi-facet_mirror"/>
+      <owl:someValuesFrom rdf:resource="#rotating multi-facet mirror"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#rotation_speed:_6_-_80hz_or_5_-_60hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#rotation_speed:_6_-_80hz_or_5_-_60hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#power_consumption:_13_a_maximum">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pulse_width:_<10ns">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#wavelength:_900nm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#weight:_<10kg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#posav_310">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy:_applanix_posav_310_precision_3cm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pos_pac_ins:_3cm_15cm_n.a.">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#trackair_toppit">
-  <rdfs:subClassOf rdf:resource="#industrial_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#pos_610"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#posav_310"/>
+      <owl:someValuesFrom rdf:resource="#angular resolution: 0.3 mrad (with 1 mrad option)"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy:_applanix_pos/pac_ins_precision_3cm"/>
+      <owl:someValuesFrom rdf:resource="#class: class 1"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#pos_pac_ins:_0.015/0.015/0.035_deg"/>
+      <owl:someValuesFrom rdf:resource="#dimensions: [lxwxh]: 56 x 20 x 22cm"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy:_applanix_pos/pac_ins_precision_3cm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#pos_pac_ins:_0.015/0.015/0.035_deg">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#attitude_determination">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#guidance_positioning">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#sensormanagement_systems">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#in-house_developed_system">
-  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#laser wavelength: ,1500nm ,4 ns"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power consumption: 120 w"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#weight: 20kg"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
 </owl:Class>
 
 

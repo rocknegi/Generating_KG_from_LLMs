@@ -1,5 +1,14 @@
 [
   {
+    "sensor": "velarray",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5774219036102295,
+    "semantic_match": false,
+    "confidence": 0.8732265710830688
+  },
+  {
     "sensor": "blickfeld cube",
     "string_match": true,
     "fuzzy_score": 100,
@@ -9,13 +18,13 @@
     "confidence": 0.8685605466365813
   },
   {
-    "sensor": "velarray",
-    "string_match": true,
-    "fuzzy_score": 100,
-    "fuzzy_match": true,
-    "semantic_score": 0.5774219036102295,
+    "sensor": "velodyne vlp-32c",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.5476404428482056,
     "semantic_match": false,
-    "confidence": 0.8732265710830688
+    "confidence": 0.3652921328544617
   },
   {
     "sensor": "velodyne vlp-32c",
@@ -36,24 +45,6 @@
     "confidence": 0.191408091545105
   },
   {
-    "sensor": "velodyne",
-    "string_match": true,
-    "fuzzy_score": 100,
-    "fuzzy_match": true,
-    "semantic_score": 0.5256640315055847,
-    "semantic_match": false,
-    "confidence": 0.8576992094516753
-  },
-  {
-    "sensor": "velodyne hdl-64e",
-    "string_match": false,
-    "fuzzy_score": 67,
-    "fuzzy_match": false,
-    "semantic_score": 0.5294250845909119,
-    "semantic_match": false,
-    "confidence": 0.3598275253772736
-  },
-  {
     "sensor": "livox horizon",
     "string_match": true,
     "fuzzy_score": 100,
@@ -61,6 +52,33 @@
     "semantic_score": 0.604805588722229,
     "semantic_match": false,
     "confidence": 0.8814416766166686
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.6318293809890747,
+    "semantic_match": false,
+    "confidence": 0.5895488142967225
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.6491886973381042,
+    "semantic_match": false,
+    "confidence": 0.5947566092014313
+  },
+  {
+    "sensor": "360 \u00b0 rotary lidar",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6124849319458008,
+    "semantic_match": false,
+    "confidence": 0.8837454795837402
   },
   {
     "sensor": "robosense m1",
@@ -90,13 +108,13 @@
     "confidence": 0.8814416766166686
   },
   {
-    "sensor": "velodyne",
+    "sensor": "",
     "string_match": true,
-    "fuzzy_score": 100,
-    "fuzzy_match": true,
-    "semantic_score": 0.5147508978843689,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.5973818302154541,
     "semantic_match": false,
-    "confidence": 0.8544252693653106
+    "confidence": 0.5792145490646362
   },
   {
     "sensor": "velodyne velarray h800",
@@ -108,22 +126,49 @@
     "confidence": 0.8666266918182373
   },
   {
-    "sensor": "robosense m1",
+    "sensor": "livox horizon",
     "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5647339820861816,
+    "semantic_score": 0.604805588722229,
     "semantic_match": false,
-    "confidence": 0.8694201946258544
+    "confidence": 0.8814416766166686
   },
   {
-    "sensor": "ouster os2",
-    "string_match": false,
-    "fuzzy_score": 2,
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
     "fuzzy_match": false,
-    "semantic_score": 0.5865840315818787,
+    "semantic_score": 0.6491886973381042,
     "semantic_match": false,
-    "confidence": 0.1819752094745636
+    "confidence": 0.5947566092014313
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.6491886973381042,
+    "semantic_match": false,
+    "confidence": 0.5947566092014313
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.6247293949127197,
+    "semantic_match": false,
+    "confidence": 0.5874188184738159
+  },
+  {
+    "sensor": "velodyne hdl-64e",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.5294250845909119,
+    "semantic_match": false,
+    "confidence": 0.3598275253772736
   },
   {
     "sensor": "livox horizon",
@@ -135,6 +180,24 @@
     "confidence": 0.8814416766166686
   },
   {
+    "sensor": "blickfeld cube",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5618684887886047,
+    "semantic_match": false,
+    "confidence": 0.8685605466365813
+  },
+  {
+    "sensor": "blickfeld cube range",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6421658992767334,
+    "semantic_match": false,
+    "confidence": 0.89264976978302
+  },
+  {
     "sensor": "innoviz pro",
     "string_match": true,
     "fuzzy_score": 100,
@@ -142,42 +205,6 @@
     "semantic_score": 0.6196824908256531,
     "semantic_match": false,
     "confidence": 0.8859047472476959
-  },
-  {
-    "sensor": "",
-    "string_match": true,
-    "fuzzy_score": 0,
-    "fuzzy_match": false,
-    "semantic_score": 0.6460004448890686,
-    "semantic_match": false,
-    "confidence": 0.5938001334667206
-  },
-  {
-    "sensor": "",
-    "string_match": true,
-    "fuzzy_score": 0,
-    "fuzzy_match": false,
-    "semantic_score": 0.6460004448890686,
-    "semantic_match": false,
-    "confidence": 0.5938001334667206
-  },
-  {
-    "sensor": "",
-    "string_match": true,
-    "fuzzy_score": 0,
-    "fuzzy_match": false,
-    "semantic_score": 0.6297601461410522,
-    "semantic_match": false,
-    "confidence": 0.5889280438423157
-  },
-  {
-    "sensor": "",
-    "string_match": true,
-    "fuzzy_score": 0,
-    "fuzzy_match": false,
-    "semantic_score": 0.6184931993484497,
-    "semantic_match": false,
-    "confidence": 0.5855479598045349
   },
   {
     "sensor": "velodyne",
@@ -189,13 +216,13 @@
     "confidence": 0.8646913528442383
   },
   {
-    "sensor": "livox horizon m1",
-    "string_match": false,
+    "sensor": "livox",
+    "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5893828272819519,
+    "semantic_score": 0.572217583656311,
     "semantic_match": false,
-    "confidence": 0.4768148481845855
+    "confidence": 0.8716652750968933
   },
   {
     "sensor": "blickfeld",
@@ -207,12 +234,30 @@
     "confidence": 0.8707878351211548
   },
   {
-    "sensor": "unnamed sensor",
-    "string_match": false,
-    "fuzzy_score": 60,
-    "fuzzy_match": false,
-    "semantic_score": 0.5543445348739624,
+    "sensor": "horizon m1 cube",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6036680936813354,
     "semantic_match": false,
-    "confidence": 0.3463033604621887
+    "confidence": 0.8811004281044006
+  },
+  {
+    "sensor": "velarray h800 pro",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5669342875480652,
+    "semantic_match": false,
+    "confidence": 0.8700802862644195
+  },
+  {
+    "sensor": "lidar",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6490013003349304,
+    "semantic_match": false,
+    "confidence": 0.8947003901004791
   }
 ]

@@ -1,26 +1,29 @@
 {
   "sensors": [
     {
-      "name": "blickfeld cube",
-      "category": "automotive lidar",
-      "parts": [],
-      "properties": [
-        "range: >200m"
-      ],
-      "implements": [
-        "ros2"
-      ]
-    },
-    {
       "name": "velarray",
       "category": "automotive lidar",
       "parts": [],
       "properties": [
-        "range: >200m"
+        "range: ,200m"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
+    },
+    {
+      "name": "blickfeld cube",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "range: ,200m"
+      ],
+      "implements": []
+    },
+    {
+      "name": "velodyne vlp-32c",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
     },
     {
       "name": "velodyne vlp-32c",
@@ -30,210 +33,223 @@
         "range: 200m",
         "resolution: 0.2°"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
       "name": "ouster os2",
       "category": "automotive lidar",
       "parts": [],
-      "properties": [],
+      "properties": [
+        "range: 120m"
+      ],
+      "implements": []
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "range: 100m",
+        "resolution: 0.08°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "",
+      "parts": [
+        "grid cells",
+        "point cloud"
+      ],
+      "properties": [
+        "distance_gps",
+        "distance_lidar"
+      ],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "accuracy: ,1 cm"
+      ],
       "implements": [
-        "ieee 802.11p"
+        "ieee 802.11p",
+        "ros2"
       ]
     },
     {
-      "name": "velodyne",
-      "category": "lidar sensor",
+      "name": "360 ° rotary lidar",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "field of view: 360°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "robosense m1",
+      "category": "automotive lidar",
       "parts": [],
       "properties": [],
+      "implements": []
+    },
+    {
+      "name": "velodyne velarray h800",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "generic lidar",
+      "parts": [],
+      "properties": [
+        "update_rate: ,5 hz"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "velodyne velarray h800",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "comparative_range: , robosense m1 and , livox horizon"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "range: , competitors",
+        "unconventional scan pattern"
+      ],
+      "implements": [
+        "open source software solution for distortion removal using integrated imu"
+      ]
+    },
+    {
+      "name": "",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "measurement type 'strongest return'"
+      ]
+    },
+    {
+      "name": "",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "40 cm sphere diameter",
+        "7 m, 12 m, 15 m, 25 m test distances"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ]
+    },
+    {
+      "name": "",
+      "category": "lidar sensors",
+      "parts": [],
+      "properties": [
+        "distances: 7 m, 12 m, 15 m, 25 m"
+      ],
       "implements": []
     },
     {
       "name": "velodyne hdl-64e",
       "category": "automotive lidar",
-      "parts": [],
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
       "properties": [
         "range: 120m",
         "resolution: 0.08°"
       ],
-      "implements": []
-    },
-    {
-      "name": "livox horizon",
-      "category": "automotive lidar",
-      "parts": [],
-      "properties": [
-        "price: usd 1300"
-      ],
-      "implements": []
-    },
-    {
-      "name": "robosense m1",
-      "category": "automotive lidar",
-      "parts": [],
-      "properties": [
-        "distortion: 2.22 m"
-      ],
       "implements": [
-        "ros2"
-      ]
-    },
-    {
-      "name": "velodyne velarray h800",
-      "category": "automotive lidar",
-      "parts": [],
-      "properties": [
-        "distortion: 2.22 m"
-      ],
-      "implements": [
+        "ieee 802.11p",
         "ros2"
       ]
     },
     {
       "name": "livox horizon",
-      "category": "automotive lidar",
-      "parts": [],
-      "properties": [
-        "distortion: 2.22 m"
-      ],
-      "implements": [
-        "ros2"
-      ]
-    },
-    {
-      "name": "velodyne",
-      "category": "",
-      "parts": [],
-      "properties": [
-        "frame rate: >5 hz"
-      ],
-      "implements": [
-        "ros2"
-      ]
-    },
-    {
-      "name": "velodyne velarray h800",
       "category": "automotive lidar",
       "parts": [
-        "imu"
+        "fpga processor",
+        "mems mirror"
       ],
       "properties": [
-        "field_of_view: narrow",
-        "range: 200m",
+        "range: 120m",
         "resolution: 0.08°"
       ],
-      "implements": []
-    },
-    {
-      "name": "robosense m1",
-      "category": "industrial lidar",
-      "parts": [],
-      "properties": [
-        "field_of_view:",
-        "range:",
-        "resolution:"
-      ],
-      "implements": []
-    },
-    {
-      "name": "ouster os2",
-      "category": "industrial lidar",
-      "parts": [],
-      "properties": [
-        "range: 200m"
-      ],
-      "implements": []
-    },
-    {
-      "name": "livox horizon",
-      "category": "automotive lidar",
-      "parts": [
-        "imu"
-      ],
-      "properties": [
-        "field_of_view: unconventional",
-        "range: 200m"
-      ],
       "implements": [
+        "ieee 802.11p",
         "ros2"
       ]
+    },
+    {
+      "name": "blickfeld cube",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
+    },
+    {
+      "name": "blickfeld cube range",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": []
     },
     {
       "name": "innoviz pro",
       "category": "automotive lidar",
       "parts": [],
-      "properties": [
-        "field_of_view: narrow",
-        "range:"
-      ],
-      "implements": []
-    },
-    {
-      "name": "",
-      "category": "solid-state lidar",
-      "parts": [],
       "properties": [],
       "implements": []
-    },
-    {
-      "name": "",
-      "category": "solid-state lidar",
-      "parts": [
-        "mems technology"
-      ],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "",
-      "category": "mechanical lidar",
-      "parts": [
-        "lens parts",
-        "moving/rotating mirror"
-      ],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "",
-      "category": "lidar",
-      "parts": [],
-      "properties": [
-        "range: 7 m - 25 m"
-      ],
-      "implements": [
-        "ros2"
-      ]
     },
     {
       "name": "velodyne",
-      "category": "automotive lidar",
-      "parts": [
-        "mems"
-      ],
-      "properties": [
-        "field of view: 81.7° h, 25.1° v",
-        "frame rate: >5 hz",
-        "range: >120m",
-        "resolution: <0.4°"
-      ],
-      "implements": [
-        "ros2"
-      ]
-    },
-    {
-      "name": "livox horizon m1",
       "category": "automotive lidar",
       "parts": [
         "mems"
       ],
       "properties": [
         "field of view: 120° h, 25° v",
-        "frame rate: >5 hz",
-        "range: >120m",
-        "resolution: <0.4°"
+        "range: 120m"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "livox",
+      "category": "automotive lidar",
+      "parts": [
+        "mems"
+      ],
+      "properties": [
+        "field of view: 81.7° h, 25.1° v",
+        "range: 120m"
       ],
       "implements": [
         "ros2"
@@ -247,19 +263,48 @@
       ],
       "properties": [
         "field of view: 72° h, 30° v",
-        "frame rate: >5 hz",
-        "range: >120m",
-        "resolution: <0.4°"
+        "range: 120m"
       ],
       "implements": [
         "ros2"
       ]
     },
     {
-      "name": "unnamed sensor",
+      "name": "horizon m1 cube",
+      "category": "automotive lidar",
+      "parts": [
+        "mems"
+      ],
+      "properties": [
+        "field of view: 18° h, 12° v",
+        "range: 120m"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "velarray h800 pro",
+      "category": "automotive lidar",
+      "parts": [
+        "mems"
+      ],
+      "properties": [
+        "field of view: 72° h, 18.5° v",
+        "range: 120m"
+      ],
+      "implements": [
+        "ros2"
+      ]
+    },
+    {
+      "name": "lidar",
       "category": "automotive lidar",
       "parts": [],
-      "properties": [],
+      "properties": [
+        "dimension: 1 m",
+        "range: 7 m - 25 m"
+      ],
       "implements": []
     }
   ]

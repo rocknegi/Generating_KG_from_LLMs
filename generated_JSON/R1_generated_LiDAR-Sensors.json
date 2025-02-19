@@ -2,29 +2,47 @@
   "sensors": [
     {
       "name": "riegl lms q240i-60/lms-q240i-80",
-      "category": "industrial lidar",
+      "category": "airborne lidar",
       "parts": [
         "rotating multi-facet mirror"
       ],
       "properties": [
-        "range: 200m",
-        "resolution: 0.08°"
+        "angular resolution: 0.3 mrad with 1 mrad option",
+        "laser wavelength: 1,500nm ,4 ns",
+        "range: 2m / 200m / 350m"
       ],
       "implements": [
-        "ieee 802.11p"
+        "riegl dr560"
       ]
     },
     {
-      "name": "riegl lms s560-i/lms-s560-a",
-      "category": "industrial lidar",
+      "name": "riegl lms-s560-i/ lms-s560-a",
+      "category": "airborne lidar",
       "parts": [
         "rotating multi-facet mirror"
       ],
       "properties": [
-        "range: 30m to 500m or 1,000m"
+        "angular resolution: 0.3 mrad with 1 mrad option",
+        "laser wavelength: 1,500nm ,4 ns",
+        "range: 30m / 500m / 1000m"
       ],
       "implements": [
-        "ros2"
+        "igi winmp/ trackair rianalyze 560"
+      ]
+    },
+    {
+      "name": "riegl lms-q560",
+      "category": "airborne lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad with 1 mrad option",
+        "laser wavelength: 1,500nm ,4 ns",
+        "range: 30m / 500m / 1000m"
+      ],
+      "implements": [
+        "riegl dr560"
       ]
     },
     {
@@ -34,128 +52,324 @@
         "rotating multi-facet mirror"
       ],
       "properties": [
-        "current: 13 a max",
-        "rotation rate: 6 - 80hz / 5 - 60hz",
-        "voltage: 28 v dc",
-        "wavelength: 900nm < 10ns"
+        "field of view: 30,000 to 60 degrees",
+        "power: 28 v dc, 13 a max",
+        "wavelength: 900nm , 10ns"
       ],
-      "implements": []
+      "implements": [
+        "ros2"
+      ]
     },
     {
       "name": "applanix posav 310",
       "category": "industrial lidar",
       "parts": [],
       "properties": [
-        "accuracy: 5 - 30cm",
-        "precision: 0.015/0.015/0.035 deg"
+        "accuracy: 0.015/0.035 deg",
+        "precision: 3cm (ins)"
       ],
       "implements": []
     },
     {
-      "name": "leica fpes",
+      "name": "topeye mk ii",
       "category": "industrial lidar",
       "parts": [
-        "oscillating mirror",
-        "pos 610"
+        "rotating assembly"
       ],
       "properties": [
-        "power consumption: 35 a (maximum)",
-        "prf rate: 167khz",
-        "pulse repetition frequency: 7ns",
-        "wavelength: 1,060nm",
-        "weight: 95kg"
+        "angular resolution: 1mrad",
+        "field of view: 3b 40m at low effect",
+        "pulse duration: 4ns",
+        "wavelength: 1,064nm"
       ],
       "implements": []
     },
     {
-      "name": "leica als post processor",
+      "name": "palmer scanner",
+      "category": "industrial lidar",
+      "parts": [],
+      "properties": [
+        "maximum range: 50,000 +/- 20 deg",
+        "scan rate: 0-75hz"
+      ],
+      "implements": []
+    },
+    {
+      "name": "falcon iii",
       "category": "industrial lidar",
       "parts": [
         "rotating multi-facet mirror"
       ],
       "properties": [
-        "rotation speed: 6 - 80hz or 5 - 60hz"
+        "angular resolution: 0.3mrad with up to 1mrad option",
+        "pulse duration: ,4ns",
+        "scan rate: 10 - 160hz",
+        "wavelength: 1,550nm"
+      ],
+      "implements": []
+    },
+    {
+      "name": "harrier 56",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3mrad with up to 1mrad option",
+        "pulse duration: ,4ns",
+        "scan rate: 10 - 160hz",
+        "wavelength: 1,550nm"
+      ],
+      "implements": []
+    },
+    {
+      "name": "pos av 510",
+      "category": "industrial lidar",
+      "parts": [
+        "ins precision"
+      ],
+      "properties": [
+        "accuracy: 5 - 30cm"
+      ],
+      "implements": []
+    },
+    {
+      "name": "pos av 410",
+      "category": "industrial lidar",
+      "parts": [
+        "ins precision"
+      ],
+      "properties": [
+        "accuracy: 5 - 30cm"
+      ],
+      "implements": []
+    },
+    {
+      "name": "leica fpes",
+      "category": "aerial lidar",
+      "parts": [],
+      "properties": [
+        "field of view: 360°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "altm gemini",
+      "category": "aerial lidar",
+      "parts": [],
+      "properties": [
+        "0.0025/0.0025/0.005 deg pos pac",
+        "167khz prf",
+        "200m range"
       ],
       "implements": []
     },
     {
       "name": "optech altm gemini",
-      "category": "industrial lidar",
-      "parts": [
-        "frame cameras"
-      ],
+      "category": "aerial lidar",
+      "parts": [],
       "properties": [
-        "power consumption: 13 a maximum",
-        "pulse width: <10ns",
-        "wavelength: 900nm",
-        "weight: <10kg"
+        "0.0025/0.0025/0.005 deg pos pac",
+        "167khz prf",
+        "200m range"
       ],
       "implements": []
     },
     {
       "name": "applanix dss",
-      "category": "industrial lidar",
-      "parts": [
-        "posav 310"
-      ],
+      "category": "aerial lidar",
+      "parts": [],
       "properties": [
-        "accuracy: applanix posav 310 precision 3cm",
-        "pos pac ins: 3cm 15cm n.a."
+        "field of view: 360°",
+        "temperature range: 0 to +50°c"
       ],
       "implements": []
     },
     {
-      "name": "trackair toppit",
-      "category": "industrial lidar",
-      "parts": [
-        "pos 610",
-        "posav 310"
-      ],
+      "name": "trimble 610",
+      "category": "aerial lidar",
+      "parts": [],
       "properties": [
-        "accuracy: applanix pos/pac ins precision 3cm",
-        "pos pac ins: 0.015/0.015/0.035 deg"
+        "field of view: 360°",
+        "temperature range: 0 to +50°c"
+      ],
+      "implements": []
+    },
+    {
+      "name": "applanix posav 310",
+      "category": "aerial lidar",
+      "parts": [],
+      "properties": [
+        "field of view: 360°",
+        "temperature range: 0 to +50°c"
+      ],
+      "implements": []
+    },
+    {
+      "name": "trackair t oppit",
+      "category": "aerial lidar",
+      "parts": [],
+      "properties": [
+        "field of view: 360°",
+        "temperature range: 0 to +50°c"
       ],
       "implements": []
     },
     {
       "name": "litemapper 2400",
       "category": "airborne lidar",
-      "parts": [
-        "attitude determination",
-        "guidance positioning",
-        "sensormanagement systems"
-      ],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "fli-map 400",
-      "category": "airborne lidar",
-      "parts": [
-        "in-house developed system"
-      ],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "litemapper 2400",
-      "category": "airborne lidar",
       "parts": [],
-      "properties": [],
+      "properties": [
+        "airborne lidar system"
+      ],
       "implements": []
     },
     {
       "name": "fli-map 400",
       "category": "airborne lidar",
       "parts": [],
-      "properties": [],
+      "properties": [
+        "lidar survey system"
+      ],
       "implements": []
     },
     {
       "name": "altm gemini",
       "category": "airborne lidar",
       "parts": [],
-      "properties": [],
+      "properties": [
+        "airborne laser terrain mapper",
+        "pulse rate: 167,000 pulses per second"
+      ],
+      "implements": []
+    },
+    {
+      "name": "fugro fli-map 400",
+      "category": "industrial lidar",
+      "parts": [
+        "oscillating mirror",
+        "rotating mirror"
+      ],
+      "properties": [
+        "dimensions: 50 x 30 x 30cm ~100kg",
+        "laser pulse characteristics: wavelength=1,500nm, pulse length=4ns, beam divergence (across/along tr.)=0.45 mrad",
+        "power requirements: 24v helicopter/fixed wing",
+        "recording methodology: forward and downward-looking"
+      ],
+      "implements": []
+    },
+    {
+      "name": "trimble db950 l1/l2",
+      "category": "",
+      "parts": [
+        "gps system",
+        "ins system"
+      ],
+      "properties": [
+        "ins precision (roll/pitch/heading) [deg]",
+        "precision planimetric/height (2 sigma) [cm]: gps precision"
+      ],
+      "implements": []
+    },
+    {
+      "name": "applanix posav 410",
+      "category": "",
+      "parts": [
+        "gps/ins postprocessing software"
+      ],
+      "properties": [
+        "precision and resolution: pointing precision (roll/pitch/heading) [deg], range precision (2 sigma) [cm], elevation precision at 1km (2 sigma) [cm]"
+      ],
+      "implements": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [
+        "pulses per second: 167,000"
+      ],
+      "implements": []
+    },
+    {
+      "name": "fli-map 400",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [
+        "detectable object size at 1000m: 3cm",
+        "detectable object size at 200m: 8mm"
+      ],
+      "implements": []
+    },
+    {
+      "name": "altm gemini",
+      "category": "airborne lidar",
+      "parts": [],
+      "properties": [
+        "pulses per second: 167,000"
+      ],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "multipurpose lidar system",
+      "parts": [],
+      "properties": [
+        "pulse_rate: 35 a (maximum)",
+        "temperature: -10°c to 35°c",
+        "voltage: 28 vdc",
+        "weight: 95kg"
+      ],
+      "implements": [
+        "ieee 802.11p"
+      ]
+    },
+    {
+      "name": "riegl lms lms-q240i-60/lms-q240i-80",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad",
+        "class: class 1",
+        "dimensions: [dia x l]: 18 x 37cm",
+        "laser wavelength: ,10ns",
+        "power consumption: 43 w",
+        "weight: 7kg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "riegl lms lms-s560-i/",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad (with 1 mrad option)",
+        "class: class 1",
+        "dimensions: [lxwxh]: 56 x 20 x 22cm",
+        "laser wavelength: ,1500nm ,4 ns",
+        "power consumption: 120 w",
+        "weight: 20kg"
+      ],
+      "implements": []
+    },
+    {
+      "name": "riegl lms lms-q560",
+      "category": "industrial lidar",
+      "parts": [
+        "rotating multi-facet mirror"
+      ],
+      "properties": [
+        "angular resolution: 0.3 mrad (with 1 mrad option)",
+        "class: class 1",
+        "dimensions: [lxwxh]: 56 x 20 x 22cm",
+        "laser wavelength: ,1500nm ,4 ns",
+        "power consumption: 120 w",
+        "weight: 20kg"
+      ],
       "implements": []
     }
   ]

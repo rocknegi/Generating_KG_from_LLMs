@@ -4,18 +4,27 @@
     "string_match": false,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5205060243606567,
+    "semantic_score": 0.540077805519104,
     "semantic_match": false,
-    "confidence": 0.45615180730819704
+    "confidence": 0.4620233416557312
   },
   {
-    "sensor": "riegl lms s560-i/lms-s560-a",
+    "sensor": "riegl lms-s560-i/ lms-s560-a",
     "string_match": false,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5070233345031738,
+    "semantic_score": 0.5299728512763977,
     "semantic_match": false,
-    "confidence": 0.45210700035095214
+    "confidence": 0.4589918553829193
+  },
+  {
+    "sensor": "riegl lms-q560",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5239773392677307,
+    "semantic_match": false,
+    "confidence": 0.4571932017803192
   },
   {
     "sensor": "toposys gmbh harrier",
@@ -36,76 +45,130 @@
     "confidence": 0.8646664798259734
   },
   {
+    "sensor": "topeye mk ii",
+    "string_match": false,
+    "fuzzy_score": 59,
+    "fuzzy_match": false,
+    "semantic_score": 0.5641361474990845,
+    "semantic_match": false,
+    "confidence": 0.34624084424972534
+  },
+  {
+    "sensor": "palmer scanner",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6060914993286133,
+    "semantic_match": false,
+    "confidence": 0.881827449798584
+  },
+  {
+    "sensor": "falcon iii",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.530626654624939,
+    "semantic_match": false,
+    "confidence": 0.8591879963874817
+  },
+  {
+    "sensor": "harrier 56",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5517407655715942,
+    "semantic_match": false,
+    "confidence": 0.8655222296714782
+  },
+  {
+    "sensor": "pos av 510",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5379568338394165,
+    "semantic_match": false,
+    "confidence": 0.8613870501518249
+  },
+  {
+    "sensor": "pos av 410",
+    "string_match": false,
+    "fuzzy_score": 82,
+    "fuzzy_match": true,
+    "semantic_score": 0.5133517384529114,
+    "semantic_match": false,
+    "confidence": 0.4000055215358734
+  },
+  {
     "sensor": "leica fpes",
     "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5807336568832397,
+    "semantic_score": 0.5772737264633179,
     "semantic_match": false,
-    "confidence": 0.8742200970649718
+    "confidence": 0.8731821179389954
   },
   {
-    "sensor": "leica als post processor",
+    "sensor": "altm gemini",
     "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5550829172134399,
+    "semantic_score": 0.5021308064460754,
     "semantic_match": false,
-    "confidence": 0.866524875164032
+    "confidence": 0.8506392419338226
   },
   {
     "sensor": "optech altm gemini",
     "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5526018142700195,
+    "semantic_score": 0.5140136480331421,
     "semantic_match": false,
-    "confidence": 0.8657805442810058
+    "confidence": 0.8542040944099426
   },
   {
     "sensor": "applanix dss",
     "string_match": true,
     "fuzzy_score": 100,
     "fuzzy_match": true,
-    "semantic_score": 0.5815051794052124,
+    "semantic_score": 0.5765068531036377,
     "semantic_match": false,
-    "confidence": 0.8744515538215637
+    "confidence": 0.8729520559310913
   },
   {
-    "sensor": "trackair toppit",
+    "sensor": "trimble 610",
     "string_match": false,
-    "fuzzy_score": 70,
-    "fuzzy_match": false,
-    "semantic_score": 0.5555746555328369,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5512704253196716,
     "semantic_match": false,
-    "confidence": 0.3766723966598511
+    "confidence": 0.46538112759590144
+  },
+  {
+    "sensor": "applanix posav 310",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5695520639419556,
+    "semantic_match": false,
+    "confidence": 0.8708656191825866
+  },
+  {
+    "sensor": "trackair t oppit",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5317410826683044,
+    "semantic_match": false,
+    "confidence": 0.8595223248004913
   },
   {
     "sensor": "litemapper 2400",
-    "string_match": true,
+    "string_match": false,
     "fuzzy_score": 100,
     "fuzzy_match": true,
     "semantic_score": 0.5969376564025879,
     "semantic_match": false,
-    "confidence": 0.8790812969207763
-  },
-  {
-    "sensor": "fli-map 400",
-    "string_match": true,
-    "fuzzy_score": 100,
-    "fuzzy_match": true,
-    "semantic_score": 0.6155292391777039,
-    "semantic_match": false,
-    "confidence": 0.8846587717533111
-  },
-  {
-    "sensor": "litemapper 2400",
-    "string_match": true,
-    "fuzzy_score": 100,
-    "fuzzy_match": true,
-    "semantic_score": 0.5969376564025879,
-    "semantic_match": false,
-    "confidence": 0.8790812969207763
+    "confidence": 0.4790812969207764
   },
   {
     "sensor": "fli-map 400",
@@ -124,5 +187,95 @@
     "semantic_score": 0.5128008127212524,
     "semantic_match": false,
     "confidence": 0.8538402438163757
+  },
+  {
+    "sensor": "fugro fli-map 400",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6444166898727417,
+    "semantic_match": false,
+    "confidence": 0.8933250069618225
+  },
+  {
+    "sensor": "trimble db950 l1/l2",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.45376837253570557,
+    "semantic_match": false,
+    "confidence": 0.8361305117607116
+  },
+  {
+    "sensor": "applanix posav 410",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5125117301940918,
+    "semantic_match": false,
+    "confidence": 0.8537535190582275
+  },
+  {
+    "sensor": "litemapper 2400",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5969376564025879,
+    "semantic_match": false,
+    "confidence": 0.4790812969207764
+  },
+  {
+    "sensor": "fli-map 400",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6155292391777039,
+    "semantic_match": false,
+    "confidence": 0.8846587717533111
+  },
+  {
+    "sensor": "altm gemini",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5128008127212524,
+    "semantic_match": false,
+    "confidence": 0.8538402438163757
+  },
+  {
+    "sensor": "",
+    "string_match": true,
+    "fuzzy_score": 0,
+    "fuzzy_match": false,
+    "semantic_score": 0.5587760210037231,
+    "semantic_match": false,
+    "confidence": 0.5676328063011169
+  },
+  {
+    "sensor": "riegl lms lms-q240i-60/lms-q240i-80",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5285120010375977,
+    "semantic_match": false,
+    "confidence": 0.8585536003112793
+  },
+  {
+    "sensor": "riegl lms lms-s560-i/",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5087389945983887,
+    "semantic_match": false,
+    "confidence": 0.8526216983795165
+  },
+  {
+    "sensor": "riegl lms lms-q560",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5196853876113892,
+    "semantic_match": false,
+    "confidence": 0.8559056162834167
   }
 ]
