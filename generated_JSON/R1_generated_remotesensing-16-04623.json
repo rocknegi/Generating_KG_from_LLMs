@@ -7,9 +7,32 @@
       "properties": [
         "field of view: 360°"
       ],
+      "implements": []
+    },
+    {
+      "name": "hokuyo utm-30lx",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "range: up to 150m",
+        "resolution: 0.1°"
+      ],
+      "implements": []
+    },
+    {
+      "name": "lidar",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "connectivity method",
+        "detection rate: 72.4%"
+      ],
       "implements": [
-        "ieee 802.11p",
-        "ros2"
+        "cnn methods",
+        "ekf methods",
+        "focal voxel r-cnn"
       ]
     },
     {
@@ -17,87 +40,34 @@
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "horizontal field of view: 360°",
-        "vertical field of view: 30°"
-      ],
-      "implements": []
-    },
-    {
-      "name": "ouster os2",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "livox horizon",
-      "category": "agricultural lidar",
-      "parts": [
-        "16 laser beams"
-      ],
-      "properties": [],
-      "implements": []
-    },
-    {
-      "name": "lidar sensors",
-      "category": "agricultural lidar",
-      "parts": [
-        "16 laser beams"
-      ],
-      "properties": [
-        "horizontal field of view: 360°",
-        "vertical field of view: 30°"
+        "elevation map generation",
+        "field of view: 30°",
+        "field of view: 360°"
       ],
       "implements": [
-        "cascade method",
-        "focal voxel r-cnn methods"
-      ]
-    },
-    {
-      "name": "velodyne vlp-32c",
-      "category": "agricultural lidar",
-      "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
-      "properties": [
-        "range: 200m",
-        "resolution: 0.2°"
-      ],
-      "implements": [
-        "ieee 802.11p",
         "ros2"
       ]
     },
     {
-      "name": "ouster os2",
+      "name": "",
       "category": "agricultural lidar",
       "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
-      "properties": [],
-      "implements": [
-        "ieee 802.11p",
-        "ros2"
-      ]
-    },
-    {
-      "name": "velodyne vlp-32c",
-      "category": "automotive lidar/industrial lidar",
-      "parts": [
-        "fpga processor",
+        "avalanche photodiode (apd)",
+        "laser diode (ld)",
         "laser transmitter",
-        "mems mirror",
-        "reflection unit",
-        "signal processing units"
+        "signal processing units",
+        "time-to-digital converter (tdc)"
       ],
       "properties": [],
+      "implements": []
+    },
+    {
+      "name": "",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [],
       "implements": [
-        "deep learning",
-        "euclidean distance",
-        "graph neural network (gnn)",
-        "point cloud clustering"
+        "ros2"
       ]
     },
     {
@@ -105,219 +75,94 @@
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
+        "measurement range: 6",
+        "number of sensors: 3",
+        "scanning frequency: 300–500"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
       "name": "lms511 pro sr",
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
+        "measurement range: 14",
+        "number of sensors: 80",
+        "scanning frequency: 25–100"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
       "name": "utm-30lx-ew",
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
+        "measurement range: 50",
+        "number of sensors: 30",
+        "scanning frequency: 40"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
-      "name": "riegl vz-400",
+      "name": "riegl vz-400 v",
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
+        "measurement range: 300",
+        "number of sensors: 5–1000",
+        "scanning frequency: 10–15"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
       "name": "lms111",
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
+        "measurement range: 30–50",
+        "number of sensors: 20",
+        "scanning frequency: 80"
       ],
-      "implements": [
-        "ros2"
-      ]
+      "implements": []
     },
     {
       "name": "utm-30lx",
       "category": "agricultural lidar",
       "parts": [],
       "properties": [
-        "range"
-      ],
-      "implements": [
-        "ros2"
-      ]
-    },
-    {
-      "name": "",
-      "category": "lidar testing standards",
-      "parts": [],
-      "properties": [
-        "angular resolution",
-        "field of view",
-        "sensor range"
-      ],
-      "implements": [
-        "{'name': 'nhtsa performance specifications', 'acronym': 'nhtsa'}",
-        "{'name': 'spie lidar data standardization tests', 'acronym': 'spie'}",
-        "{'name': 'usgs lidar base specification', 'acronym': 'usgs'}"
-      ]
-    },
-    {
-      "name": "general lidar",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "range: 200m",
-        "resolution: 0.08°"
-      ],
-      "implements": [
-        "ieee 802.11p",
-        "ros2"
-      ]
-    },
-    {
-      "name": "velodyne vlp-16",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 30m",
-        "range: 100m",
-        "scanning_frequency: 20hz"
-      ],
-      "implements": []
-    },
-    {
-      "name": "riegl vux-1uav",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 5–10m",
-        "range: 1.5–1415m",
-        "scanning_frequency: 1200hz"
-      ],
-      "implements": []
-    },
-    {
-      "name": "lms511-10100 pro",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 6–14m",
-        "range: 40m",
-        "scanning_frequency: 25–100hz"
-      ],
-      "implements": []
-    },
-    {
-      "name": "hdl-32",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 20m",
-        "range: 80–100m",
-        "scanning_frequency: 5–20hz"
-      ],
-      "implements": []
-    },
-    {
-      "name": "faro focus x330",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 2m",
-        "range: 30–330m",
-        "scanning_frequency: 97hz"
-      ],
-      "implements": []
-    },
-    {
-      "name": "velodyne",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "detection rate: 72.4%, 18%",
-        "field of view: 30°, 360°",
-        "range: 120m",
-        "resolution: 0.08°"
-      ],
-      "implements": []
-    },
-    {
-      "name": "ouster os2",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "comparative_range: > ouster os2"
+        "measurement range: 25",
+        "number of sensors: 40",
+        "scanning frequency: 60"
       ],
       "implements": []
     },
     {
       "name": "",
-      "category": "",
-      "parts": [],
-      "properties": [
-        "r^2: 0.99",
-        "rmse: 0.017 m"
+      "category": "precision agriculture lidar",
+      "parts": [
+        "dbscan",
+        "icp",
+        "point cloud library",
+        "sca_ia"
       ],
+      "properties": [],
       "implements": [
         "ros2"
       ]
-    },
-    {
-      "name": "lidar",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "accuracy: ±15 mm",
-        "angular resolutions: 1°, 0.5°, 0.25°",
-        "correlation: 0.675",
-        "range: up to 8 m",
-        "relative error: 11.83%"
-      ],
-      "implements": []
     },
     {
       "name": "velodyne hdl64-s3",
       "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "r2: 0.97",
-        "r2: 0.99",
-        "rmse: 0.017 m",
-        "rmse: 0.05 m"
+      "parts": [
+        "merging",
+        "point cloud analysis",
+        "registration",
+        "single-plant height computation"
       ],
+      "properties": [],
       "implements": [
-        "ros2"
+        "ros"
       ]
-    },
-    {
-      "name": "",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "accuracy: millimeter–centimeter-level",
-        "penetration ability: dense canopies"
-      ],
-      "implements": []
     }
   ]
 }
