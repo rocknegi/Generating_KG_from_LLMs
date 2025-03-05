@@ -1,0 +1,137 @@
+{
+  "sensors": [
+    {
+      "name": "velarray",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "range: ,200m"
+      ],
+      "implements": [],
+      "devices": [
+        "vehicle"
+      ]
+    },
+    {
+      "name": "blickfeld cube",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": [],
+      "devices": [
+        "vehicle"
+      ]
+    },
+    {
+      "name": "lidar",
+      "category": "research/development",
+      "parts": [
+        "laser beams",
+        "point cloud reflection",
+        "square meter plane"
+      ],
+      "properties": [
+        "range: 7 m - 25 m (x, y, z axes)",
+        "resolution: 1 m in z and y dimensions, 0 m in x dimension"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "robosense m1",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "actual width of vehicle: 1.9m",
+        "dynamic scenarios",
+        "field of view: wider than others",
+        "movement effects",
+        "range: 120m"
+      ],
+      "implements": [],
+      "devices": [
+        "autonomous vehicles",
+        "traffic scenario"
+      ]
+    },
+    {
+      "name": "velodyne velarray h800",
+      "category": "automotive lidar, lidar",
+      "parts": [],
+      "properties": [
+        "dynamic scenarios",
+        "field of view: narrow",
+        "movement effects",
+        "range: 25m"
+      ],
+      "implements": [],
+      "devices": [
+        "autonomous vehicles"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "dynamic scenarios",
+        "field of view: unique scan pattern",
+        "movement effects",
+        "range: 120m"
+      ],
+      "implements": [],
+      "devices": [
+        "autonomous vehicles",
+        "traffic scenario"
+      ]
+    },
+    {
+      "name": "livox horizon lidar",
+      "category": "lidar",
+      "parts": [],
+      "properties": [
+        "range: high",
+        "scan pattern: unconventional"
+      ],
+      "implements": [],
+      "devices": [
+        "general use cases"
+      ]
+    },
+    {
+      "name": "360° rotary lidar",
+      "category": "lidar",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "kalman filters",
+        "loop closure",
+        "particle filters",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicles, drones, and other systems"
+      ]
+    },
+    {
+      "name": "velodyne velarray",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "field of view: wider than others",
+        "range: 120m",
+        "vertical resolution: 0.2m (20cm)"
+      ],
+      "implements": [],
+      "devices": [
+        "traffic scenario"
+      ]
+    }
+  ]
+}

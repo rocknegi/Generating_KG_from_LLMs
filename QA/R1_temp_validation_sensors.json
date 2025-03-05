@@ -1,0 +1,83 @@
+[
+  {
+    "sensor": "velarray",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5774219036102295,
+    "semantic_match": false,
+    "confidence": 0.8732265710830688
+  },
+  {
+    "sensor": "blickfeld cube",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5618684887886047,
+    "semantic_match": false,
+    "confidence": 0.8685605466365813
+  },
+  {
+    "sensor": "lidar",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.642042338848114,
+    "semantic_match": false,
+    "confidence": 0.8926127016544342
+  },
+  {
+    "sensor": "robosense m1",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5808619260787964,
+    "semantic_match": false,
+    "confidence": 0.8742585778236389
+  },
+  {
+    "sensor": "velodyne velarray h800",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5495806336402893,
+    "semantic_match": false,
+    "confidence": 0.8648741900920868
+  },
+  {
+    "sensor": "livox horizon",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.604805588722229,
+    "semantic_match": false,
+    "confidence": 0.8814416766166686
+  },
+  {
+    "sensor": "livox horizon lidar",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5876502394676208,
+    "semantic_match": false,
+    "confidence": 0.8762950718402862
+  },
+  {
+    "sensor": "360\u00b0 rotary lidar",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5862350463867188,
+    "semantic_match": false,
+    "confidence": 0.47587051391601565
+  },
+  {
+    "sensor": "velodyne velarray",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5918762683868408,
+    "semantic_match": false,
+    "confidence": 0.8775628805160522
+  }
+]
