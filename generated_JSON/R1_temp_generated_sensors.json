@@ -5,6 +5,7 @@
       "category": "automotive lidar",
       "parts": [],
       "properties": [
+        "accuracy: low",
         "range: ,200m"
       ],
       "implements": [],
@@ -14,123 +15,336 @@
     },
     {
       "name": "blickfeld cube",
-      "category": "automotive lidar",
+      "category": "automotive lidar, general lidar, lidar",
       "parts": [],
-      "properties": [],
-      "implements": [],
+      "properties": [
+        "accuracy: decreases at higher distances",
+        "accuracy: low",
+        "field of view: narrow",
+        "fov: narrow",
+        "scan pattern: grid-like"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ],
       "devices": [
+        "autonomous vehicles, drones",
+        "lidar testing setup",
         "vehicle"
       ]
     },
     {
-      "name": "lidar",
-      "category": "research/development",
-      "parts": [
-        "laser beams",
-        "point cloud reflection",
-        "square meter plane"
-      ],
-      "properties": [
-        "range: 7 m - 25 m (x, y, z axes)",
-        "resolution: 1 m in z and y dimensions, 0 m in x dimension"
-      ],
-      "implements": [],
-      "devices": []
-    },
-    {
-      "name": "robosense m1",
+      "name": "velodyne",
       "category": "automotive lidar",
-      "parts": [
-        "mems mirror"
-      ],
-      "properties": [
-        "actual width of vehicle: 1.9m",
-        "dynamic scenarios",
-        "field of view: wider than others",
-        "movement effects",
-        "range: 120m"
-      ],
-      "implements": [],
-      "devices": [
-        "autonomous vehicles",
-        "traffic scenario"
-      ]
-    },
-    {
-      "name": "velodyne velarray h800",
-      "category": "automotive lidar, lidar",
       "parts": [],
       "properties": [
-        "dynamic scenarios",
-        "field of view: narrow",
-        "movement effects",
-        "range: 25m"
+        "range: 200m",
+        "resolution: 0.2°"
       ],
-      "implements": [],
+      "implements": [
+        "ros2"
+      ],
       "devices": [
         "autonomous vehicles"
       ]
     },
     {
-      "name": "livox horizon",
+      "name": "ouster os2",
       "category": "automotive lidar",
       "parts": [
+        "fpga processor",
         "mems mirror"
       ],
       "properties": [
-        "dynamic scenarios",
-        "field of view: unique scan pattern",
-        "movement effects",
-        "range: 120m"
+        "frames per second: 10-30 fps",
+        "range: 200m",
+        "resolution: 0.2°"
       ],
-      "implements": [],
-      "devices": [
-        "autonomous vehicles",
-        "traffic scenario"
-      ]
-    },
-    {
-      "name": "livox horizon lidar",
-      "category": "lidar",
-      "parts": [],
-      "properties": [
-        "range: high",
-        "scan pattern: unconventional"
-      ],
-      "implements": [],
-      "devices": [
-        "general use cases"
-      ]
-    },
-    {
-      "name": "360° rotary lidar",
-      "category": "lidar",
-      "parts": [],
-      "properties": [],
       "implements": [
-        "kalman filters",
-        "loop closure",
-        "particle filters",
         "ros2"
       ],
       "devices": [
-        "autonomous vehicles, drones, and other systems"
+        "autonomous vehicles",
+        "test vehicle"
+      ]
+    },
+    {
+      "name": "sensor 2022",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "update rate or frame rate: ,5 hz"
+      ],
+      "implements": [
+        "linux-based system implementation",
+        "ros2 support"
+      ],
+      "devices": []
+    },
+    {
+      "name": "22",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "update rate or frame rate: ,5 hz"
+      ],
+      "implements": [
+        "linux-based system implementation",
+        "ros2 support"
+      ],
+      "devices": []
+    },
+    {
+      "name": "7146",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [
+        "update rate or frame rate: ,5 hz"
+      ],
+      "implements": [
+        "linux-based system implementation",
+        "ros2 support"
+      ],
+      "devices": []
+    },
+    {
+      "name": "innoviz pro",
+      "category": "automotive lidar, general lidar, lidar",
+      "parts": [],
+      "properties": [
+        "accuracy: fails at 25m",
+        "field of view: insufficient for dynamic scenarios",
+        "range: unable to perform benchmark at 25 m"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicles, drones",
+        "lidar testing setup"
+      ]
+    },
+    {
+      "name": "livox horizon",
+      "category": "automotive lidar, general lidar, lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "0.08° resolution",
+        "accuracy: high at 7-15m",
+        "field of view: dense scanning pattern",
+        "fov: unconventional",
+        "frames per second: 10-30 fps",
+        "offset: 2.5 m",
+        "range: 200m",
+        "range: fewer points hit the sphere at 25m",
+        "range: outperforms competitors",
+        "resolution: 0.2°",
+        "resolution: better for object dimensions"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "open source software solution for distortion correction using integrated imu",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicle",
+        "autonomous vehicles, drones",
+        "lidar testing setup",
+        "test vehicle"
+      ]
+    },
+    {
+      "name": "robosense m1",
+      "category": "automotive lidar, general lidar, lidar",
+      "parts": [],
+      "properties": [
+        "accuracy: less decrease with higher distances",
+        "offset: 2.5 m",
+        "range: unspecified",
+        "resolution: unable to counteract gaps",
+        "scan pattern: homogeneous and consistent"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicle",
+        "autonomous vehicles, drones",
+        "lidar testing setup"
+      ]
+    },
+    {
+      "name": "velodyne velarray h800",
+      "category": "automotive lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "0.08° resolution",
+        "10 m range",
+        "fov: trade-off for automotive use",
+        "offset: 2.5 m",
+        "range: unspecified"
+      ],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicle",
+        "autonomous vehicles, drones"
       ]
     },
     {
       "name": "velodyne velarray",
+      "category": "general lidar",
+      "parts": [],
+      "properties": [
+        "accuracy: decreases from 7m to 12m",
+        "range: good performance at closer distances"
+      ],
+      "implements": [],
+      "devices": [
+        "lidar testing setup"
+      ]
+    },
+    {
+      "name": "livox robosense",
       "category": "automotive lidar",
       "parts": [
         "mems mirror"
       ],
       "properties": [
-        "field of view: wider than others",
-        "range: 120m",
-        "vertical resolution: 0.2m (20cm)"
+        "field of view",
+        "frame rate",
+        "minimal detection distance",
+        "range",
+        "resolution"
       ],
-      "implements": [],
+      "implements": [
+        "ros/ros2"
+      ],
       "devices": [
-        "traffic scenario"
+        "autonomous vehicle"
+      ]
+    },
+    {
+      "name": "blickfeld",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "field of view",
+        "frame rate",
+        "minimal detection distance",
+        "range",
+        "resolution"
+      ],
+      "implements": [
+        "ros/ros2"
+      ],
+      "devices": [
+        "autonomous vehicle"
+      ]
+    },
+    {
+      "name": "velodyne innoviz horizon m1 cube",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "field of view",
+        "frame rate",
+        "minimal detection distance",
+        "range",
+        "resolution"
+      ],
+      "implements": [
+        "ros/ros2"
+      ],
+      "devices": [
+        "autonomous vehicle"
+      ]
+    },
+    {
+      "name": "cube range",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "field of view",
+        "frame rate",
+        "minimal detection distance",
+        "range",
+        "resolution"
+      ],
+      "implements": [
+        "ros/ros2"
+      ],
+      "devices": [
+        "autonomous vehicle"
+      ]
+    },
+    {
+      "name": "velarray h800 pro",
+      "category": "automotive lidar",
+      "parts": [
+        "mems mirror"
+      ],
+      "properties": [
+        "field of view",
+        "frame rate",
+        "minimal detection distance",
+        "range",
+        "resolution"
+      ],
+      "implements": [
+        "ros/ros2"
+      ],
+      "devices": [
+        "autonomous vehicle"
+      ]
+    },
+    {
+      "name": "velodyne vlp-32c",
+      "category": "automotive lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "frames per second: 10-30 fps",
+        "range: 200m",
+        "resolution: 0.2°"
+      ],
+      "implements": [
+        "ros2"
+      ],
+      "devices": [
+        "test vehicle"
+      ]
+    },
+    {
+      "name": "blickfeld cube range",
+      "category": "automotive lidar",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "ieee 802.11p",
+        "ros2"
+      ],
+      "devices": [
+        "autonomous vehicles, drones"
       ]
     }
   ]
