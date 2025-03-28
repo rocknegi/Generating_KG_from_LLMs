@@ -1,0 +1,119 @@
+[
+  {
+    "sensor": "hokuyo",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5727240443229675,
+    "semantic_match": false,
+    "confidence": 0.8718172132968902
+  },
+  {
+    "sensor": "lms400-2000",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6566178798675537,
+    "semantic_match": true,
+    "confidence": 0.8969853639602661
+  },
+  {
+    "sensor": "lms511 pro sr",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6093933582305908,
+    "semantic_match": false,
+    "confidence": 0.8828180074691772
+  },
+  {
+    "sensor": "utm-30lx-ew",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6057376861572266,
+    "semantic_match": false,
+    "confidence": 0.8817213058471679
+  },
+  {
+    "sensor": "riegl vz-400 v",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5833728313446045,
+    "semantic_match": false,
+    "confidence": 0.8750118494033813
+  },
+  {
+    "sensor": "lms111",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.647124171257019,
+    "semantic_match": false,
+    "confidence": 0.8941372513771056
+  },
+  {
+    "sensor": "velodyne vlp-16 puck-lite",
+    "string_match": false,
+    "fuzzy_score": 78,
+    "fuzzy_match": false,
+    "semantic_score": 0.6054100394248962,
+    "semantic_match": false,
+    "confidence": 0.41562301182746886
+  },
+  {
+    "sensor": "velodyne vlp-16",
+    "string_match": false,
+    "fuzzy_score": 85,
+    "fuzzy_match": true,
+    "semantic_score": 0.6043158173561096,
+    "semantic_match": false,
+    "confidence": 0.43629474520683287
+  },
+  {
+    "sensor": "riegl vux-1uav",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6034539341926575,
+    "semantic_match": false,
+    "confidence": 0.8810361802577972
+  },
+  {
+    "sensor": "lms511-10100 pro",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.633635938167572,
+    "semantic_match": false,
+    "confidence": 0.8900907814502715
+  },
+  {
+    "sensor": "faro focus x330",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5968049168586731,
+    "semantic_match": false,
+    "confidence": 0.8790414750576019
+  },
+  {
+    "sensor": "velodyne hdl64-s3",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6082972884178162,
+    "semantic_match": false,
+    "confidence": 0.8824891865253448
+  },
+  {
+    "sensor": "hdl-64",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.589834988117218,
+    "semantic_match": false,
+    "confidence": 0.37795049643516543
+  }
+]

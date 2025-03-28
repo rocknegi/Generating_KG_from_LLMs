@@ -1,0 +1,182 @@
+{
+  "sensors": [
+    {
+      "name": "hokuyo",
+      "category": "safety lidar",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "standards for safety lidar"
+      ],
+      "devices": []
+    },
+    {
+      "name": "lms400-2000",
+      "category": "agricultural lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 300–500 m",
+        "resolution: 25–100 mm"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "lms511 pro sr",
+      "category": "agricultural lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 6–14 m",
+        "resolution: 25–100 mm"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "utm-30lx-ew",
+      "category": "agricultural lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 30 m",
+        "resolution: 25–50 mm"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "riegl vz-400 v",
+      "category": "agricultural lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 10–1000 m",
+        "resolution: 30–300 mm"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "lms111",
+      "category": "agricultural lidar",
+      "parts": [
+        "fpga processor",
+        "mems mirror"
+      ],
+      "properties": [
+        "range: 20 m",
+        "resolution: 25–50 mm"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "velodyne vlp-16 puck-lite",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "error: 30m",
+        "operating range: 100m",
+        "scanning frequency: 5–20 hz"
+      ],
+      "implements": [],
+      "devices": [
+        "tractors, robots, sprayers, agrob v16 agricultural robotic platform"
+      ]
+    },
+    {
+      "name": "velodyne vlp-16",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "error: 30m",
+        "operating range: 100m",
+        "scanning frequency: 5–20 hz"
+      ],
+      "implements": [],
+      "devices": [
+        "tractors, robots, sprayers"
+      ]
+    },
+    {
+      "name": "riegl vux-1uav",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "error: 5–10m",
+        "operating range: 1.5–1415m",
+        "scanning frequency: 1200 hz"
+      ],
+      "implements": [],
+      "devices": [
+        "tractors, robots"
+      ]
+    },
+    {
+      "name": "lms511-10100 pro",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "error: 6–14 m",
+        "operating range: 40m",
+        "scanning frequency: 25–100 hz"
+      ],
+      "implements": [],
+      "devices": [
+        "tractors, robots"
+      ]
+    },
+    {
+      "name": "faro focus x330",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "error: 2m",
+        "operating range: 30–330m",
+        "scanning frequency: 97 hz"
+      ],
+      "implements": [],
+      "devices": [
+        "tractors, robots"
+      ]
+    },
+    {
+      "name": "velodyne hdl64-s3",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "r2: 0.97",
+        "range: 0.05m"
+      ],
+      "implements": [
+        "ros"
+      ],
+      "devices": [
+        "mobile robot"
+      ]
+    },
+    {
+      "name": "hdl-64",
+      "category": "agricultural lidar",
+      "parts": [],
+      "properties": [
+        "r2: 0.99",
+        "range: 0.017m"
+      ],
+      "implements": [],
+      "devices": [
+        "autonomous platform"
+      ]
+    }
+  ]
+}
