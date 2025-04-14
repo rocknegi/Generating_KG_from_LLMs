@@ -1,0 +1,147 @@
+{
+  "sensors": [
+    {
+      "name": "unnamed sensor",
+      "category": "lidar",
+      "parts": [],
+      "properties": [
+        "angular_resolution",
+        "echo_processing",
+        "frequency_range",
+        "operating_temperature",
+        "power_consumption",
+        "pulse_duration"
+      ],
+      "implements": [],
+      "devices": [
+        "airborne scanning projects",
+        "diamond aircraft twin-engine plane da42mpp",
+        "hard disk storage (2 x 320 gbytes)"
+      ]
+    },
+    {
+      "name": "temperature sensor",
+      "category": "temperature sensor",
+      "parts": [],
+      "properties": [],
+      "implements": [],
+      "devices": [
+        "surveying/mapping system"
+      ]
+    },
+    {
+      "name": "oblique sensor",
+      "category": "optical sensor",
+      "parts": [],
+      "properties": [],
+      "implements": [],
+      "devices": [
+        "surveying/mapping system"
+      ]
+    },
+    {
+      "name": "video camera",
+      "category": "vision sensor",
+      "parts": [],
+      "properties": [],
+      "implements": [],
+      "devices": [
+        "surveying/mapping system"
+      ]
+    },
+    {
+      "name": "leica fpes",
+      "category": "lidar system",
+      "parts": [],
+      "properties": [
+        "operating temperature",
+        "power supply",
+        "weight"
+      ],
+      "implements": [
+        "",
+        "-",
+        "a",
+        "c",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "l",
+        "m",
+        "n",
+        "s",
+        "t",
+        "y"
+      ],
+      "devices": []
+    },
+    {
+      "name": "optech altm gemini",
+      "category": "lidar system",
+      "parts": [],
+      "properties": [
+        "operating temperature",
+        "pulse rate frequency (prf)",
+        "weight"
+      ],
+      "implements": [
+        "",
+        "a",
+        "b",
+        "e",
+        "f",
+        "g",
+        "i",
+        "l",
+        "n",
+        "o",
+        "r",
+        "s",
+        "t",
+        "x"
+      ],
+      "devices": []
+    },
+    {
+      "name": "litemapper 2400",
+      "category": "lidar sensor",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "attitude determination",
+        "guidance positioning",
+        "sensormanagement"
+      ],
+      "devices": [
+        "airborne survey system"
+      ]
+    },
+    {
+      "name": "fli-map 400",
+      "category": "lidar sensor",
+      "parts": [],
+      "properties": [],
+      "implements": [
+        "in-house development"
+      ],
+      "devices": [
+        "lidar survey system"
+      ]
+    },
+    {
+      "name": "altm gemini",
+      "category": "lidar sensor",
+      "parts": [],
+      "properties": [
+        "167,000 pulses per second",
+        "resolution and precision statistics"
+      ],
+      "implements": [],
+      "devices": [
+        "airborne laser terrain mapper"
+      ]
+    }
+  ]
+}

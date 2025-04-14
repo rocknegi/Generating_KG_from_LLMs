@@ -1,182 +1,169 @@
 {
   "sensors": [
     {
-      "name": "hokuyo",
-      "category": "safety lidar",
-      "parts": [],
-      "properties": [],
+      "name": "lidar sensor",
+      "category": "lidar, lidar sensor, remote sensing",
+      "parts": [
+        "3d model construction",
+        "avalanche photodiode (apd)",
+        "gps receivers",
+        "laser diode (ld)",
+        "laser pulses",
+        "laser transmitter",
+        "point cloud analysis",
+        "point cloud registration",
+        "reflected light data processing",
+        "signal processing units",
+        "single-plant height computation",
+        "time-to-digital converter (tdc)",
+        "tof (time-of-flight) data"
+      ],
+      "properties": [
+        "360-degree field of view",
+        "accuracy: millimeter to centimeter level",
+        "biomass estimation using 3dpi algorithm",
+        "challenges with illuminance, weather, and temperature",
+        "comparative_sensitivity: surpasses ultrasonic sensors and rgb cameras",
+        "exact distance estimation",
+        "high accuracy",
+        "horizontal field of view: 360°",
+        "need for calibration and repeated testing",
+        "operational range: not explicitly specified in text",
+        "precise data collection",
+        "precision: high",
+        "r2: 0.88, rmse: 5.2 cm (for sugar beet)",
+        "r2: 0.97, rmse: 0.05 m (for wheat)",
+        "r2: 0.99, rmse: 0.017 m (for wheat)",
+        "real-time obstacle detection",
+        "versatility: used day and night, various weather conditions",
+        "vertical field of view: 30°"
+      ],
       "implements": [
-        "standards for safety lidar"
+        "3dpi algorithm",
+        "gps receivers",
+        "merging of point clouds",
+        "point cloud registration",
+        "ros (robotic operating system)",
+        "tof technology"
       ],
-      "devices": []
+      "devices": [
+        "agricultural applications, autonomous platforms, mobile robots",
+        "agricultural machinery, obstacle detection in challenging environments",
+        "agriculture, forestry, autonomous systems"
+      ]
     },
     {
-      "name": "lms400-2000",
-      "category": "agricultural lidar",
+      "name": "lidar",
+      "category": "3d lidar sensor, lidar",
       "parts": [
-        "fpga processor",
-        "mems mirror"
+        "kalman filter",
+        "laser pulses",
+        "laser technology",
+        "point cloud data",
+        "ransac algorithm",
+        "scanning module",
+        "voxel grid model"
       ],
       "properties": [
-        "range: 300–500 m",
-        "resolution: 25–100 mm"
+        "3d structural detail mapping",
+        "assists in field boundary detection, ridge detection, and soil surface analysis",
+        "detects obstacles, terrain variations, and machinery pathways",
+        "enables real-time decision-making",
+        "high-resolution spatial data",
+        "integration of plant and environmental data",
+        "real-time data collection",
+        "scalability across various platforms",
+        "used for precise mapping of farm environments"
+      ],
+      "implements": [
+        "discriminative analysis",
+        "dynamic tracking point model",
+        "kalman filter",
+        "ransac algorithm",
+        "voxel grid model"
+      ],
+      "devices": [
+        "agricultural machinery, autonomous vehicles, land management systems",
+        "precision farming systems, agricultural automation"
+      ]
+    },
+    {
+      "name": "lidar sensors",
+      "category": "lidar",
+      "parts": [
+        "laser diode",
+        "photodetector"
+      ],
+      "properties": [
+        "environmental resilience",
+        "point density",
+        "range accuracy",
+        "real-time data capabilities"
+      ],
+      "implements": [],
+      "devices": [
+        "agricultural applications, crop monitoring, field mapping, obstacle detection in autonomous vehicles, soil resource conservation"
+      ]
+    },
+    {
+      "name": "vlp-16",
+      "category": "lidar",
+      "parts": [],
+      "properties": [
+        "error margin: 30 m",
+        "operating range: 100 m",
+        "scanning frequency: 20 hz"
       ],
       "implements": [],
       "devices": []
     },
     {
-      "name": "lms511 pro sr",
-      "category": "agricultural lidar",
-      "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
+      "name": "hdl-32",
+      "category": "lidar",
+      "parts": [],
       "properties": [
-        "range: 6–14 m",
-        "resolution: 25–100 mm"
+        "error margin: 20 m",
+        "operating range: 80–100 m",
+        "scanning frequency: 5–20 hz"
       ],
       "implements": [],
       "devices": []
     },
     {
-      "name": "utm-30lx-ew",
-      "category": "agricultural lidar",
-      "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
+      "name": "lms400 pro",
+      "category": "lidar",
+      "parts": [],
       "properties": [
-        "range: 30 m",
-        "resolution: 25–50 mm"
+        "error margin: 6–14 m",
+        "operating range: 3 m",
+        "scanning frequency: 25–100 hz"
       ],
       "implements": [],
       "devices": []
     },
     {
-      "name": "riegl vz-400 v",
-      "category": "agricultural lidar",
-      "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
+      "name": "faro focus x330",
+      "category": "lidar",
+      "parts": [],
       "properties": [
-        "range: 10–1000 m",
-        "resolution: 30–300 mm"
+        "error margin: 2 m",
+        "operating range: 30–330 m",
+        "scanning frequency: 97 hz"
       ],
       "implements": [],
       "devices": []
     },
     {
       "name": "lms111",
-      "category": "agricultural lidar",
-      "parts": [
-        "fpga processor",
-        "mems mirror"
-      ],
+      "category": "lidar",
+      "parts": [],
       "properties": [
-        "range: 20 m",
-        "resolution: 25–50 mm"
+        "error margin: 12 m",
+        "operating range: 20 m",
+        "scanning frequency: 25–50 hz"
       ],
       "implements": [],
       "devices": []
-    },
-    {
-      "name": "velodyne vlp-16 puck-lite",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 30m",
-        "operating range: 100m",
-        "scanning frequency: 5–20 hz"
-      ],
-      "implements": [],
-      "devices": [
-        "tractors, robots, sprayers, agrob v16 agricultural robotic platform"
-      ]
-    },
-    {
-      "name": "velodyne vlp-16",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 30m",
-        "operating range: 100m",
-        "scanning frequency: 5–20 hz"
-      ],
-      "implements": [],
-      "devices": [
-        "tractors, robots, sprayers"
-      ]
-    },
-    {
-      "name": "riegl vux-1uav",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 5–10m",
-        "operating range: 1.5–1415m",
-        "scanning frequency: 1200 hz"
-      ],
-      "implements": [],
-      "devices": [
-        "tractors, robots"
-      ]
-    },
-    {
-      "name": "lms511-10100 pro",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 6–14 m",
-        "operating range: 40m",
-        "scanning frequency: 25–100 hz"
-      ],
-      "implements": [],
-      "devices": [
-        "tractors, robots"
-      ]
-    },
-    {
-      "name": "faro focus x330",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "error: 2m",
-        "operating range: 30–330m",
-        "scanning frequency: 97 hz"
-      ],
-      "implements": [],
-      "devices": [
-        "tractors, robots"
-      ]
-    },
-    {
-      "name": "velodyne hdl64-s3",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "r2: 0.97",
-        "range: 0.05m"
-      ],
-      "implements": [
-        "ros"
-      ],
-      "devices": [
-        "mobile robot"
-      ]
-    },
-    {
-      "name": "hdl-64",
-      "category": "agricultural lidar",
-      "parts": [],
-      "properties": [
-        "r2: 0.99",
-        "range: 0.017m"
-      ],
-      "implements": [],
-      "devices": [
-        "autonomous platform"
-      ]
     }
   ]
 }

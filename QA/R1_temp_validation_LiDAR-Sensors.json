@@ -1,0 +1,83 @@
+[
+  {
+    "sensor": "unnamed sensor",
+    "string_match": false,
+    "fuzzy_score": 60,
+    "fuzzy_match": false,
+    "semantic_score": 0.4951402246952057,
+    "semantic_match": false,
+    "confidence": 0.32854206740856173
+  },
+  {
+    "sensor": "temperature sensor",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.2687499523162842,
+    "semantic_match": false,
+    "confidence": 0.38062498569488523
+  },
+  {
+    "sensor": "oblique sensor",
+    "string_match": false,
+    "fuzzy_score": 67,
+    "fuzzy_match": false,
+    "semantic_score": 0.3099632263183594,
+    "semantic_match": false,
+    "confidence": 0.2939889678955078
+  },
+  {
+    "sensor": "video camera",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.3211132287979126,
+    "semantic_match": false,
+    "confidence": 0.39633396863937376
+  },
+  {
+    "sensor": "leica fpes",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5356215238571167,
+    "semantic_match": false,
+    "confidence": 0.860686457157135
+  },
+  {
+    "sensor": "optech altm gemini",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.49542558193206787,
+    "semantic_match": false,
+    "confidence": 0.8486276745796203
+  },
+  {
+    "sensor": "litemapper 2400",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5349969863891602,
+    "semantic_match": false,
+    "confidence": 0.860499095916748
+  },
+  {
+    "sensor": "fli-map 400",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5693672299385071,
+    "semantic_match": false,
+    "confidence": 0.8708101689815521
+  },
+  {
+    "sensor": "altm gemini",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.4626784026622772,
+    "semantic_match": false,
+    "confidence": 0.8388035207986831
+  }
+]
