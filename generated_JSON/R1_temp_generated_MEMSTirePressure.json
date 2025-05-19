@@ -1,0 +1,94 @@
+{
+  "sensors": [
+    {
+      "name": "cmut pressure sensor",
+      "category": "capacitive pressure sensor, pressure sensor",
+      "parts": [
+        "aluminum electrodes",
+        "array cavity structure",
+        "bias voltage (vbias)",
+        "bottom electrode",
+        "capacitor units",
+        "cmut membrane",
+        "equivalent area (a)",
+        "insulation layer",
+        "lower electrode",
+        "membrane",
+        "mems diaphragm",
+        "parallel plate capacitor",
+        "silicon film",
+        "silicon membrane",
+        "silicon substrate",
+        "sio2 insulation layer",
+        "supportive substrate plane",
+        "upper electrode",
+        "vacuum dielectric constant (ε0)",
+        "vibrating film"
+      ],
+      "properties": [
+        "10 years of continuous operation",
+        "electrostatic force equation: f = −1 2 vγ ത െx ദേച്യ സികാ ഗോളം",
+        "energy efficiency",
+        "enhanced sensitivity due to dc bias",
+        "high measurement accuracy",
+        "high-precision pressure measurement",
+        "improved precision",
+        "low power consumption",
+        "low-power consumption",
+        "low_power_mode: up to 10 years",
+        "maximum capacitance change: 35.56 ff at 230 kpa",
+        "membrane radius",
+        "membrane thickness",
+        "minimal charge variation: 1449 electrons at 1 kpa resolution",
+        "noise reduction",
+        "power consumption: 1.47 μw at 9 v supply voltage",
+        "power-efficient measurement principles",
+        "pressure range: up to 230 kpa",
+        "quick response time",
+        "resonance frequency",
+        "resonant frequency varies linearly with pressure within lower bias voltage range",
+        "robust stability",
+        "sensitivity",
+        "sensitivity: 11.9 ff/kpa (simulation), 139 ff/kpa (actual measurement)",
+        "sensitivity: 154.6 af/kpa (average), fluctuates with pressure changes",
+        "theoretical accuracy: ±0.01 bar (1 kpa)",
+        "ultra-low power use"
+      ],
+      "implements": [
+        "capacitance detection-based principle",
+        "cmut technology",
+        "dc-biased cmut",
+        "matrix connection",
+        "mems technology",
+        "silicon-silicon bonding",
+        "silicon-silicon bonding technology",
+        "wafer bonding techniques"
+      ],
+      "devices": [
+        "['medical diagnostics', 'industrial monitoring', 'iot-enabled systems', 'automotive systems', 'tire pressure monitoring systems (tpms)', 'smart autonomous systems']",
+        "medical diagnostics, industrial monitoring",
+        "microcapacitor structure",
+        "pressure measurement",
+        "tire pressure monitoring system (tpms)"
+      ]
+    },
+    {
+      "name": "cmut",
+      "category": "capacitive sensor",
+      "parts": [
+        "mass block",
+        "parallel plate capacitance",
+        "silicon substrate",
+        "spring",
+        "vacuum chamber"
+      ],
+      "properties": [
+        "vacuum dielectric constant: 8.854187817 × 10−12 f/m"
+      ],
+      "implements": [],
+      "devices": [
+        "pressure measurement system"
+      ]
+    }
+  ]
+}

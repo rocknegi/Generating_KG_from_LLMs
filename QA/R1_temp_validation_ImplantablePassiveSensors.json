@@ -1,0 +1,146 @@
+[
+  {
+    "sensor": "passive implantable glucose sensor",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6610413789749146,
+    "semantic_match": true,
+    "confidence": 0.49831241369247437
+  },
+  {
+    "sensor": "senseonics eversense",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5694424510002136,
+    "semantic_match": false,
+    "confidence": 0.870832735300064
+  },
+  {
+    "sensor": "resonant sensor element",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6179596781730652,
+    "semantic_match": false,
+    "confidence": 0.8853879034519195
+  },
+  {
+    "sensor": "passive resistive and capacitive sensors",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5681886076927185,
+    "semantic_match": false,
+    "confidence": 0.8704565823078155
+  },
+  {
+    "sensor": "stretchable fiber composite sensor",
+    "string_match": false,
+    "fuzzy_score": 90,
+    "fuzzy_match": true,
+    "semantic_score": 0.5763108134269714,
+    "semantic_match": false,
+    "confidence": 0.44289324402809144
+  },
+  {
+    "sensor": "pressure sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5038166046142578,
+    "semantic_match": false,
+    "confidence": 0.8511449813842773
+  },
+  {
+    "sensor": "strain sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5847724080085754,
+    "semantic_match": false,
+    "confidence": 0.8754317224025726
+  },
+  {
+    "sensor": "ph sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5057466626167297,
+    "semantic_match": false,
+    "confidence": 0.8517239987850189
+  },
+  {
+    "sensor": "temperature sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.4568685293197632,
+    "semantic_match": false,
+    "confidence": 0.8370605587959289
+  },
+  {
+    "sensor": "glucose sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5749307870864868,
+    "semantic_match": false,
+    "confidence": 0.872479236125946
+  },
+  {
+    "sensor": "capacitive pressure sensor",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6702585220336914,
+    "semantic_match": true,
+    "confidence": 0.5010775566101074
+  },
+  {
+    "sensor": "impedance spectroscopy chip",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6361620426177979,
+    "semantic_match": false,
+    "confidence": 0.8908486127853393
+  },
+  {
+    "sensor": "potentiostat",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6147660613059998,
+    "semantic_match": false,
+    "confidence": 0.8844298183917999
+  },
+  {
+    "sensor": "unnamed sensor",
+    "string_match": false,
+    "fuzzy_score": 60,
+    "fuzzy_match": false,
+    "semantic_score": 0.5808977484703064,
+    "semantic_match": false,
+    "confidence": 0.35426932454109195
+  },
+  {
+    "sensor": "bioresorbable ph sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5470706224441528,
+    "semantic_match": false,
+    "confidence": 0.8641211867332458
+  },
+  {
+    "sensor": "acoustic metamaterial-based temperature sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5379698276519775,
+    "semantic_match": false,
+    "confidence": 0.8613909482955933
+  }
+]

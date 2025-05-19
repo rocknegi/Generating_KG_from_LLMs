@@ -1,0 +1,226 @@
+{
+  "sensors": [
+    {
+      "name": "f8-type sensor",
+      "category": "capacitive pressure sensor, pressure sensor",
+      "parts": [
+        "bonding layer",
+        "internal electrodes",
+        "measurement cavity",
+        "membrane thickness variation",
+        "mems",
+        "mems diaphragm",
+        "monocrystalline silicon substrate",
+        "silicon substrate",
+        "tsv",
+        "tsv design",
+        "tsvs (through-silicon vias)"
+      ],
+      "properties": [
+        "combined performance: 6%",
+        "hysteresis analysis through linear behavior and equations",
+        "linearity improvement",
+        "linearity: 99.994%",
+        "max temperature: up to 350°c",
+        "maximum measuring range: 2.76 bar",
+        "membrane area consideration",
+        "nonlinearity: ≤1%",
+        "operating temperature: up to 350 °c",
+        "sensitivity: 34 ff/kpa",
+        "temperature sensitivity effect",
+        "thermal drift: -0.0164% fs/k at 350°c",
+        "thermal stability",
+        "thermal stability: 15.7 pm/°c ≤5%",
+        "thickness impact on performance"
+      ],
+      "implements": [
+        "comsol 6.2 electromechanical physics interface",
+        "comsol 6.2 simulation with electromechanical physics interface",
+        "thermocompression bonding",
+        "thermocompression bonding for tsvs"
+      ],
+      "devices": [
+        "pressure monitoring system"
+      ]
+    },
+    {
+      "name": "sensors 2025",
+      "category": "pressure sensor",
+      "parts": [
+        "elastic membrane with a central anvil",
+        "insulating layer of silicon oxide (sio2)",
+        "metalization",
+        "tsv holes"
+      ],
+      "properties": [],
+      "implements": [
+        "inductively coupled plasma (icp) etching",
+        "koh etching process",
+        "tsv technology"
+      ],
+      "devices": [
+        "absolute pressure sensor"
+      ]
+    },
+    {
+      "name": "sensors 25",
+      "category": "pressure sensor",
+      "parts": [
+        "elastic membrane with a central anvil",
+        "insulating layer of silicon oxide (sio2)",
+        "metalization",
+        "tsv holes"
+      ],
+      "properties": [],
+      "implements": [
+        "inductively coupled plasma (icp) etching",
+        "koh etching process",
+        "tsv technology"
+      ],
+      "devices": [
+        "absolute pressure sensor"
+      ]
+    },
+    {
+      "name": "type f2 absolute sensor",
+      "category": "pressure sensor",
+      "parts": [
+        "mems diaphragm",
+        "tsv"
+      ],
+      "properties": [
+        "high-temperature applications: considers temperature-dependent changes in dielectric constant and thermal stress"
+      ],
+      "implements": [
+        "compression bonding",
+        "metallization layers"
+      ],
+      "devices": [
+        "industrial process control system"
+      ]
+    },
+    {
+      "name": "velodyne vlp-16",
+      "category": "lidar",
+      "parts": [
+        "mems diaphragm",
+        "tsv"
+      ],
+      "properties": [
+        "automated for automotive applications"
+      ],
+      "implements": [
+        "silicon-silicon bonding",
+        "tsv technology"
+      ],
+      "devices": [
+        "autonomous vehicles"
+      ]
+    },
+    {
+      "name": "f8 membrane anvil sensor",
+      "category": "capacitive pressure sensor",
+      "parts": [
+        "membrane"
+      ],
+      "properties": [
+        "capacitance change: exceeding 100% of no-load capacitance",
+        "measuring range: 2.76 bar",
+        "sensitivity: 34 ff/kpa"
+      ],
+      "implements": [],
+      "devices": [
+        "pressure measurement"
+      ]
+    },
+    {
+      "name": "mems-based absolute pressure sensor",
+      "category": "pressure sensor",
+      "parts": [
+        "piezoelectric crystal structure",
+        "tsv (through-silicon via) technology"
+      ],
+      "properties": [
+        "high-temperature resistance (up to 350 °c)",
+        "long-term stability",
+        "mechanical tests showcasing high linearity and long-term reliability",
+        "media resistance",
+        "reduced temperature dependence"
+      ],
+      "implements": [
+        "finite element analysis",
+        "innovative tsv fabrication process"
+      ],
+      "devices": [
+        "high-temperature applications, industrial monitoring systems"
+      ]
+    },
+    {
+      "name": "tsv-based pressure sensor",
+      "category": "capacitive sensor",
+      "parts": [
+        "doped polysilicon",
+        "sio2",
+        "tsvs"
+      ],
+      "properties": [
+        "accuracy",
+        "challenges with temperature-dependent semiconductor effects",
+        "high thermal and mechanical stability",
+        "long-term stability",
+        "low energy consumption",
+        "parasitic capacitances",
+        "sensitivity",
+        "use of soi wafers and sic substrates"
+      ],
+      "implements": [
+        "tsv technology"
+      ],
+      "devices": [
+        "high-temperature absolute pressure sensors"
+      ]
+    },
+    {
+      "name": "sensors",
+      "category": "['relative pressure sensor', 'force sensor']",
+      "parts": [
+        "single-crystal silicon",
+        "tsv technology",
+        "two plates (bottom and top)"
+      ],
+      "properties": [
+        "sensitivity: 0.035% fs/k",
+        "thermal stability: up to 500 °c"
+      ],
+      "implements": [
+        "integration of tsv technology"
+      ],
+      "devices": [
+        "manufacturing processes for relative pressure and force measurements"
+      ]
+    },
+    {
+      "name": "mems pressure sensors",
+      "category": "pressure sensor",
+      "parts": [
+        "faraday cage",
+        "gold–gold diffusion bonding",
+        "gold–silicon eutectic bonding",
+        "monocrystalline silicon",
+        "through-silicon via (tsv) design"
+      ],
+      "properties": [
+        "linearity",
+        "operating_temperature",
+        "sensitivity",
+        "thermal_drift"
+      ],
+      "implements": [
+        "au-au diffusion bonding",
+        "au-si eutectic bonding",
+        "tsv design"
+      ],
+      "devices": []
+    }
+  ]
+}

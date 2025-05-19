@@ -1,0 +1,261 @@
+{
+  "sensors": [
+    {
+      "name": "passive implantable glucose sensor",
+      "category": "implantable biosensor",
+      "parts": [
+        "hydrogel-interlayer",
+        "rf resonator"
+      ],
+      "properties": [
+        "biocompatible hydrogel layer for adherence to biomedical applications",
+        "glucose sensitivity through capacitance changes",
+        "wireless communication capability"
+      ],
+      "implements": [
+        "radiofrequency (rf) technology for wireless data transmission"
+      ],
+      "devices": [
+        "medical implantable devices such as orthopedic prosthetics, cardiovascular stents, and diabetes monitoring."
+      ]
+    },
+    {
+      "name": "senseonics eversense",
+      "category": "glucose sensor",
+      "parts": [],
+      "properties": [
+        "biocompatibility",
+        "semi-implantable"
+      ],
+      "implements": [],
+      "devices": [
+        "continuous glucose monitoring device"
+      ]
+    },
+    {
+      "name": "resonant sensor element",
+      "category": "capacitive sensor",
+      "parts": [
+        "parasitic capacitances",
+        "resistive and capacitive sensors"
+      ],
+      "properties": [
+        "measurement range: up to 15 m in air",
+        "quality factor q",
+        "resonant frequency"
+      ],
+      "implements": [
+        "fast-settling nonlinearity",
+        "self-oscillating approach",
+        "third-order intermodulation component"
+      ],
+      "devices": [
+        "general-purpose measurement system"
+      ]
+    },
+    {
+      "name": "passive resistive and capacitive sensors",
+      "category": "resistive sensor",
+      "parts": [
+        "capacitance",
+        "resistance"
+      ],
+      "properties": [
+        "impedance",
+        "sensitivity",
+        "voltage amplitude proportional to resistance"
+      ],
+      "implements": [
+        "fast-settling nonlinearity",
+        "self-oscillating approach",
+        "third-order intermodulation component"
+      ],
+      "devices": [
+        "measurement system for sensing loads"
+      ]
+    },
+    {
+      "name": "stretchable fiber composite sensor",
+      "category": "strain sensor",
+      "parts": [
+        "ag nanoparticles",
+        "conductive fibers",
+        "pu-based substrate"
+      ],
+      "properties": [
+        "high sensitivity",
+        "hysteresis reduction",
+        "operational modes: conductive fibers straightening vs. intrinsic stretching",
+        "q-factor: not significantly altered",
+        "resonant frequency shift: tens of mhz",
+        "strain range: up to 15%",
+        "stretchable and flexible"
+      ],
+      "implements": [
+        "composite fabrication using ag+ ion absorption and chemical reduction",
+        "wireless interrogation via s11 reflection coefficient monitoring"
+      ],
+      "devices": [
+        "medical suturing thread for implant applications"
+      ]
+    },
+    {
+      "name": "pressure sensor",
+      "category": "pressure sensor",
+      "parts": [
+        "capacitor",
+        "flexible electrodes",
+        "mems structure"
+      ],
+      "properties": [
+        "capacitance change: responsive to pressure changes",
+        "operating frequency: resonant circuit-based",
+        "response time: dependent on mechanical and electrical design",
+        "specificity: high for accurate readings"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "strain sensor",
+      "category": "strain sensor",
+      "parts": [
+        "adhesive layers",
+        "flexibility material",
+        "resistance wire"
+      ],
+      "properties": [
+        "durability: resistant to repeated stress",
+        "response to deformation: direct mechanical measurement",
+        "signal strength: varies with strain magnitude"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "ph sensor",
+      "category": "ph sensor",
+      "parts": [
+        "ion-selective electrode",
+        "isolating jelly",
+        "reference electrode"
+      ],
+      "properties": [
+        "calibration: regular maintenance required",
+        "electrical potential: correlates with ph level",
+        "response time: fast for continuous monitoring"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "temperature sensor",
+      "category": "temperature sensor",
+      "parts": [
+        "heat conduction plate",
+        "insulation layer",
+        "thermistor"
+      ],
+      "properties": [
+        "response time: rapid",
+        "stability: long-term durability",
+        "temperature sensitivity: linear response"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "glucose sensor",
+      "category": "glucose sensor",
+      "parts": [
+        "enzyme electrode",
+        "permitransign electrodes",
+        "reference electrode"
+      ],
+      "properties": [
+        "calibration: requires initial setup",
+        "electrical signal: based on glucose concentration",
+        "response time: fast for glucose levels"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "capacitive pressure sensor",
+      "category": "passive implantable sensors",
+      "parts": [],
+      "properties": [
+        "power consumption"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "impedance spectroscopy chip",
+      "category": "passive implantable sensors",
+      "parts": [],
+      "properties": [
+        "power consumption"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "potentiostat",
+      "category": "passive implantable sensors",
+      "parts": [],
+      "properties": [
+        "power consumption"
+      ],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "unnamed sensor",
+      "category": "ph, pressure, pressure - capacitance, mems-type",
+      "parts": [],
+      "properties": [],
+      "implements": [],
+      "devices": []
+    },
+    {
+      "name": "bioresorbable ph sensor",
+      "category": "ph sensor",
+      "parts": [
+        "parallel-plate capacitor with plga film",
+        "ph-responsive hydrogel",
+        "serpentine spiral inductor",
+        "zn electrodes"
+      ],
+      "properties": [
+        "measurable shift due to hydrogel swelling",
+        "resonant frequency: 20 mhz"
+      ],
+      "implements": [
+        "bioresorbable conductive paste technology (candelilla wax and w microparticles)",
+        "thermal bonding via pva adhesive"
+      ],
+      "devices": [
+        "passive implantable device for gastric leakage detection"
+      ]
+    },
+    {
+      "name": "acoustic metamaterial-based temperature sensor",
+      "category": "temperature sensor",
+      "parts": [
+        "pdms matrix",
+        "si wafer with sio2 layers via drie",
+        "silicon micropillars"
+      ],
+      "properties": [
+        "resonance frequency shift due to pdms and si modulus changes"
+      ],
+      "implements": [
+        "deep reactive ion etching (drie) for si wafer processing"
+      ],
+      "devices": [
+        "passive implantable device for temperature monitoring"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "sensor": "cmut pressure sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.7106024622917175,
+    "semantic_match": true,
+    "confidence": 0.9131807386875153
+  },
+  {
+    "sensor": "cmut",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6511034369468689,
+    "semantic_match": true,
+    "confidence": 0.8953310310840606
+  }
+]

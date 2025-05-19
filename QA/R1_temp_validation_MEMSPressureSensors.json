@@ -1,0 +1,92 @@
+[
+  {
+    "sensor": "f8-type sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.594857931137085,
+    "semantic_match": false,
+    "confidence": 0.8784573793411254
+  },
+  {
+    "sensor": "sensors 2025",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6126101613044739,
+    "semantic_match": false,
+    "confidence": 0.8837830483913421
+  },
+  {
+    "sensor": "sensors 25",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6134474277496338,
+    "semantic_match": false,
+    "confidence": 0.4840342283248901
+  },
+  {
+    "sensor": "type f2 absolute sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5531464219093323,
+    "semantic_match": false,
+    "confidence": 0.8659439265727996
+  },
+  {
+    "sensor": "velodyne vlp-16",
+    "string_match": false,
+    "fuzzy_score": 24,
+    "fuzzy_match": false,
+    "semantic_score": 0.35833218693733215,
+    "semantic_match": false,
+    "confidence": 0.17949965608119964
+  },
+  {
+    "sensor": "f8 membrane anvil sensor",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.6101754903793335,
+    "semantic_match": false,
+    "confidence": 0.8830526471138
+  },
+  {
+    "sensor": "mems-based absolute pressure sensor",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5957404971122742,
+    "semantic_match": false,
+    "confidence": 0.4787221491336823
+  },
+  {
+    "sensor": "tsv-based pressure sensor",
+    "string_match": false,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.577122151851654,
+    "semantic_match": false,
+    "confidence": 0.47313664555549617
+  },
+  {
+    "sensor": "sensors",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5624080896377563,
+    "semantic_match": false,
+    "confidence": 0.8687224268913268
+  },
+  {
+    "sensor": "mems pressure sensors",
+    "string_match": true,
+    "fuzzy_score": 100,
+    "fuzzy_match": true,
+    "semantic_score": 0.5833858847618103,
+    "semantic_match": false,
+    "confidence": 0.8750157654285431
+  }
+]
