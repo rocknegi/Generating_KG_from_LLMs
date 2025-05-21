@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/sensor_ontology.owl"
+         xmlns="http://example.org/sensor_ontology.owl#">
+
+<owl:Ontology rdf:about="http://example.org/sensor_ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_part_directly">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_property">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#implements">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Technology"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#used_in">
+  <rdfs:range rdf:resource="#Device"/>
+  <rdfs:domain rdf:resource="#Sensor"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#category"/>
+
+<owl:Class rdf:about="#Device">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SensorComponent">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Technology">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#medical_diagnostics_industrial_monitoring_iot-enabled_systems_automotive_systems_tire_pressure_monitoring_systems_tpms_smart_autonomous_systems">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#medical_diagnostics_industrial_monitoring_iot-enabled_systems_automotive_systems_tire_pressure_monitoring_systems_tpms_smart_autonomous_systems_capacitive_pressure_sensor_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#medical_diagnostics_industrial_monitoring_iot-enabled_systems_automotive_systems_tire_pressure_monitoring_systems_tpms_smart_autonomous_systems"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cmut_pressure_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#medical_diagnostics_industrial_monitoring_iot-enabled_systems_automotive_systems_tire_pressure_monitoring_systems_tpms_smart_autonomous_systems"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#wafer_bonding_techniques"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#silicon-silicon_bonding_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#silicon-silicon_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#mems_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#matrix_connection"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#dc-biased_cmut"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#cmut_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#capacitance_detection-based_principle"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#ultra-low_power_use"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#theoretical_accuracy_001_bar_1_kpa"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity_1546_afkpa_average_fluctuates_with_pressure_changes"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity_119_ffkpa_simulation_139_ffkpa_actual_measurement"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#robust_stability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resonant_frequency_varies_linearly_with_pressure_within_lower_bias_voltage_range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resonance_frequency"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#quick_response_time"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pressure_range_up_to_230_kpa"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power-efficient_measurement_principles"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power_consumption_147_w_at_9_v_supply_voltage"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#noise_reduction"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#minimal_charge_variation_1449_electrons_at_1_kpa_resolution"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#membrane_thickness"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#membrane_radius"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#maximum_capacitance_change_3556_ff_at_230_kpa"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#low_power_mode_up_to_10_years"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#low-power_consumption"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#low_power_consumption"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#improved_precision"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high-precision_pressure_measurement"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high_measurement_accuracy"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#enhanced_sensitivity_due_to_dc_bias"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#energy_efficiency"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#electrostatic_force_equation_f__1_2_v__x___"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#10_years_of_continuous_operation"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#vibrating_film"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#vacuum_dielectric_constant_0"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#upper_electrode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#supportive_substrate_plane"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#sio2_insulation_layer"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#silicon_substrate"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#silicon_membrane"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#silicon_film"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#parallel_plate_capacitor"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mems_diaphragm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#membrane"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#lower_electrode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#insulation_layer"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#equivalent_area_a"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#cmut_membrane"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#capacitor_units"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#bottom_electrode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#bias_voltage_vbias"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#array_cavity_structure"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#aluminum_electrodes"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#medical_diagnostics_industrial_monitoring_iot-enabled_systems_automotive_systems_tire_pressure_monitoring_systems_tpms_smart_autonomous_systems_capacitive_pressure_sensor_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitive_pressure_sensor_pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#aluminum_electrodes">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#array_cavity_structure">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bias_voltage_vbias">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bottom_electrode">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#capacitor_units">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cmut_membrane">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#equivalent_area_a">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulation_layer">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lower_electrode">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems_diaphragm">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#parallel_plate_capacitor">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon_film">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon_membrane">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon_substrate">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sio2_insulation_layer">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#supportive_substrate_plane">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#upper_electrode">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vacuum_dielectric_constant_0">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vibrating_film">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#10_years_of_continuous_operation">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#electrostatic_force_equation_f__1_2_v__x___">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#energy_efficiency">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#enhanced_sensitivity_due_to_dc_bias">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high_measurement_accuracy">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-precision_pressure_measurement">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#improved_precision">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_power_consumption">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low-power_consumption">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_power_mode_up_to_10_years">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#maximum_capacitance_change_3556_ff_at_230_kpa">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane_radius">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane_thickness">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#minimal_charge_variation_1449_electrons_at_1_kpa_resolution">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#noise_reduction">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#power_consumption_147_w_at_9_v_supply_voltage">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#power-efficient_measurement_principles">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_range_up_to_230_kpa">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quick_response_time">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#resonance_frequency">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#resonant_frequency_varies_linearly_with_pressure_within_lower_bias_voltage_range">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#robust_stability">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity_119_ffkpa_simulation_139_ffkpa_actual_measurement">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity_1546_afkpa_average_fluctuates_with_pressure_changes">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#theoretical_accuracy_001_bar_1_kpa">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ultra-low_power_use">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#capacitance_detection-based_principle">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cmut_technology">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dc-biased_cmut">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#matrix_connection">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems_technology">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon-silicon_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon-silicon_bonding_technology">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#wafer_bonding_techniques">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_measurement_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_measurement_system_capacitive_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#pressure_measurement_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cmut_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#pressure_measurement_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vacuum_dielectric_constant_8854187817__1012_fm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#vacuum_chamber"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#spring"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#silicon_substrate"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#parallel_plate_capacitance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mass_block"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#pressure_measurement_system_capacitive_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitive_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#mass_block">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#parallel_plate_capacitance">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#spring">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vacuum_chamber">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vacuum_dielectric_constant_8854187817__1012_fm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+
+</rdf:RDF>

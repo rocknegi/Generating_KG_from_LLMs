@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/sensor_ontology.owl"
+         xmlns="http://example.org/sensor_ontology.owl#">
+
+<owl:Ontology rdf:about="http://example.org/sensor_ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_part_directly">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_property">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#implements">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Technology"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#used_in">
+  <rdfs:range rdf:resource="#Device"/>
+  <rdfs:domain rdf:resource="#Sensor"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#category"/>
+
+<owl:Class rdf:about="#Device">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SensorComponent">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Technology">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_scanning_projects">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_scanning_projects_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#airborne_scanning_projects"/>
+</owl:Class>
+
+<owl:Class rdf:about="#unnamed_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#airborne_scanning_projects"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse_duration"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power_consumption"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_temperature"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#frequency_range"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#echo_processing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#angular_resolution"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#airborne_scanning_projects_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#angular_resolution">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#echo_processing">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#frequency_range">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#operating_temperature">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#power_consumption">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulse_duration">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#surveyingmapping_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#surveyingmapping_system_temperature_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#temperature_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#surveyingmapping_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system_temperature_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#surveyingmapping_system_optical_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#oblique_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#surveyingmapping_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system_optical_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#surveyingmapping_system_vision_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#video_camera_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#surveyingmapping_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#surveyingmapping_system_vision_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vision_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#generic_device">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#generic_device_lidar_system">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#generic_device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#leica_fpes_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#y"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#t"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#s"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#n"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#l"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#i"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#h"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#g"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#f"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#e"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#a"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#-"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#weight"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#power_supply"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_temperature"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar_system"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_system</category>
+</owl:Class>
+
+<owl:Class rdf:about="#power_supply">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#-">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#a">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#c">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#e">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#f">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#g">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#h">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#i">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#l">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#m">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#n">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#s">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#t">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#y">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#optech_altm_gemini_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#x"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#t"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#s"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#r"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#o"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#n"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#l"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#i"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#g"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#f"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#e"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#b"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#a"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#weight"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#pulse_rate_frequency_prf"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_temperature"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar_system"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_system</category>
+</owl:Class>
+
+<owl:Class rdf:about="#pulse_rate_frequency_prf">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#b">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#o">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#r">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#x">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_survey_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_survey_system_lidar_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#airborne_survey_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#litemapper_2400_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#airborne_survey_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#sensormanagement"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#guidance_positioning"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#attitude_determination"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#airborne_survey_system_lidar_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#attitude_determination">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#guidance_positioning">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensormanagement">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_survey_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_survey_system_lidar_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#lidar_survey_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fli-map_400_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#lidar_survey_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#in-house_development"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#lidar_survey_system_lidar_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#in-house_development">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_laser_terrain_mapper">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#airborne_laser_terrain_mapper_lidar_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#airborne_laser_terrain_mapper"/>
+</owl:Class>
+
+<owl:Class rdf:about="#altm_gemini_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#airborne_laser_terrain_mapper"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#resolution_and_precision_statistics"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#167000_pulses_per_second"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#airborne_laser_terrain_mapper_lidar_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#167000_pulses_per_second">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#resolution_and_precision_statistics">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+
+</rdf:RDF>

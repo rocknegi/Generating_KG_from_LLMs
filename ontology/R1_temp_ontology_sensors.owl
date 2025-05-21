@@ -24,8 +24,8 @@
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#used_in">
-  <rdfs:domain rdf:resource="#Sensor"/>
   <rdfs:range rdf:resource="#Device"/>
+  <rdfs:domain rdf:resource="#Sensor"/>
 </owl:ObjectProperty>
 
 <owl:AnnotationProperty rdf:about="#category"/>
@@ -54,91 +54,20 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:Class rdf:about="#vehicle">
+<owl:Class rdf:about="#vehicle_lidar_system_used_in_autonomous_vehicle_scenarios">
   <rdfs:subClassOf rdf:resource="#Device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#vehicle_automotive_lidar">
+<owl:Class rdf:about="#vehicle_lidar_system_used_in_autonomous_vehicle_scenarios_lidar">
   <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#vehicle"/>
+  <rdfs:subClassOf rdf:resource="#vehicle_lidar_system_used_in_autonomous_vehicle_scenarios"/>
 </owl:Class>
 
 <owl:Class rdf:about="#velarray_model">
-  <rdfs:subClassOf rdf:resource="#vehicle_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_low"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy_low">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_200m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_vehicles_drones">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_vehicles_drones_automotive_lidar_general_lidar_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_drones"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld_cube_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_drones_automotive_lidar_general_lidar_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_decreases_at_higher_distances"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_low"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view_narrow"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#fov_narrow"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scan_pattern_grid-like"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
+      <owl:someValuesFrom rdf:resource="#vehicle_lidar_system_used_in_autonomous_vehicle_scenarios"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -149,31 +78,56 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicles_drones"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern_causes_inaccuracies_in_width_measurements"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar_general_lidar_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#capable_of_returning_accurate_width_near_ground_truth_at_over_200_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_low_for_x-axis_measurement_edge_fringing_problem"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#vehicle_lidar_system_used_in_autonomous_vehicle_scenarios_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#accuracy_decreases_at_higher_distances">
+<owl:Class rdf:about="#laser_diode">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#photodetector">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy_low_for_x-axis_measurement_edge_fringing_problem">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#field_of_view_narrow">
+<owl:Class rdf:about="#capable_of_returning_accurate_width_near_ground_truth_at_over_200_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#fov_narrow">
+<owl:Class rdf:about="#scan_pattern_causes_inaccuracies_in_width_measurements">
   <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#scan_pattern_grid-like">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ieee_80211p">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
 </owl:Class>
 
 <owl:Class rdf:about="#ros2">
@@ -184,76 +138,18 @@
   <rdfs:subClassOf rdf:resource="#Device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#autonomous_vehicles_automotive_lidar">
+<owl:Class rdf:about="#autonomous_vehicles_lidar">
   <rdfs:subClassOf rdf:resource="#SensorComponent"/>
   <rdfs:subClassOf rdf:resource="#autonomous_vehicles"/>
 </owl:Class>
 
-<owl:Class rdf:about="#velodyne_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_02"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#blickfeld_cube_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
       <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution_02">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ouster_os2_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frames_per_second_10-30_fps"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_02"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#implements"/>
@@ -262,374 +158,96 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern_causes_inaccuracies_in_width_measurements"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#performance_less_accurate_at_higher_distances"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field_of_view_narrow_fov_resulting_in_dense_scanning"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_low_for_x-axis_measurement_edge_fringing_problem"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_highest_among_tested_sensors"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#zoom_lens"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#scan_points_per_frame"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#fpga_processor">
+<owl:Class rdf:about="#scan_points_per_frame">
   <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#mems_mirror">
+<owl:Class rdf:about="#zoom_lens">
   <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#frames_per_second_10-30_fps">
+<owl:Class rdf:about="#accuracy_highest_among_tested_sensors">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#generic_device">
+<owl:Class rdf:about="#field_of_view_narrow_fov_resulting_in_dense_scanning">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#performance_less_accurate_at_higher_distances">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#autonomous_vehicle_testing">
   <rdfs:subClassOf rdf:resource="#Device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#generic_device_automotive_lidar">
+<owl:Class rdf:about="#autonomous_vehicle_testing_lidar">
   <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#generic_device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#sensor_2022_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#update_rate_or_frame_rate_5_hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#linux-based_system_implementation"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2_support"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#update_rate_or_frame_rate_5_hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#linux-based_system_implementation">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ros2_support">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
-</owl:Class>
-
-<owl:Class rdf:about="#22_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#update_rate_or_frame_rate_5_hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#linux-based_system_implementation"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2_support"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#7146_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#update_rate_or_frame_rate_5_hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#linux-based_system_implementation"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2_support"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#innoviz_pro_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_drones_automotive_lidar_general_lidar_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_fails_at_25m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view_insufficient_for_dynamic_scenarios"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_unable_to_perform_benchmark_at_25_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicles_drones"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar_general_lidar_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy_fails_at_25m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#field_of_view_insufficient_for_dynamic_scenarios">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_unable_to_perform_benchmark_at_25_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_vehicle">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_vehicle_automotive_lidar_general_lidar_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle"/>
-</owl:Class>
-
-<owl:Class rdf:about="#livox_horizon_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar_general_lidar_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#008_resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_high_at_7-15m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view_dense_scanning_pattern"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#fov_unconventional"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frames_per_second_10-30_fps"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#offset_25_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_fewer_points_hit_the_sphere_at_25m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_outperforms_competitors"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_02"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_better_for_object_dimensions"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#open_source_software_solution_for_distortion_correction_using_integrated_imu"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar_general_lidar_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#008_resolution">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy_high_at_7-15m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#field_of_view_dense_scanning_pattern">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#fov_unconventional">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#offset_25_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_fewer_points_hit_the_sphere_at_25m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_outperforms_competitors">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution_better_for_object_dimensions">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#open_source_software_solution_for_distortion_correction_using_integrated_imu">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_testing"/>
 </owl:Class>
 
 <owl:Class rdf:about="#robosense_m1_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar_general_lidar_lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_less_decrease_with_higher_distances"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#offset_25_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_unspecified"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_unable_to_counteract_gaps"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scan_pattern_homogeneous_and_consistent"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicle_testing"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -640,82 +258,65 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#position_difference_offset"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar_general_lidar_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#movement-induced_distortion"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_decrease_less_with_higher_distances"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#points_and_homogeneous_scan_pattern"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_testing_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#accuracy_less_decrease_with_higher_distances">
+<owl:Class rdf:about="#points_and_homogeneous_scan_pattern">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy_decrease_less_with_higher_distances">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#range_unspecified">
+<owl:Class rdf:about="#movement-induced_distortion">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#resolution_unable_to_counteract_gaps">
+<owl:Class rdf:about="#position_difference_offset">
   <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#scan_pattern_homogeneous_and_consistent">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_vehicle_automotive_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle"/>
 </owl:Class>
 
 <owl:Class rdf:about="#velodyne_velarray_h800_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#008_resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#10_m_range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#fov_trade-off_for_automotive_use"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#offset_25_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_unspecified"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicle_testing"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -726,432 +327,300 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#10_m_range">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#fov_trade-off_for_automotive_use">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lidar_testing_setup">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lidar_testing_setup_general_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#lidar_testing_setup"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne_velarray_model">
-  <rdfs:subClassOf rdf:resource="#lidar_testing_setup_general_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#accuracy_decreases_from_7m_to_12m"/>
+      <owl:someValuesFrom rdf:resource="#position_difference_offset"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_good_performance_at_closer_distances"/>
+      <owl:someValuesFrom rdf:resource="#movement-induced_distortion"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#lidar_testing_setup"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#accuracy_decreases_from_7m_to_12m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_good_performance_at_closer_distances">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#livox_robosense_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view"/>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
     </owl:Restriction>
   </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_testing_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#livox_horizon_model">
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frame_rate"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#minimal_detection_distance"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution"/>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicle_testing"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#rosros2"/>
+      <owl:someValuesFrom rdf:resource="#ros2"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#position_difference_offset"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#noise_marginal_noise_for_each_point"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#movement-induced_distortion"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_high_at_7-15_m_decreases_at_25_m_due_to_fewer_points_hitting_the_sphere"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#density_of_points"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_testing_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#density_of_points">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy_high_at_7-15_m_decreases_at_25_m_due_to_fewer_points_hitting_the_sphere">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#noise_marginal_noise_for_each_point">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#automotive_test_vehicle_setup">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#automotive_test_vehicle_setup_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#automotive_test_vehicle_setup"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_from_hmetc_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#automotive_test_vehicle_setup"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#static_sphere_detection_in_varying_distances_7_m_to_25_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#automotive_test_vehicle_setup_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#static_sphere_detection_in_varying_distances_7_m_to_25_m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#robotics_applications_automated_driving">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#robotics_applications_automated_driving_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#robotics_applications_automated_driving"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_sensors_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#robotics_applications_automated_driving"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern_differences"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#point_precision_deviations"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#robotics_applications_automated_driving_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#point_precision_deviations">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scan_pattern_differences">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vehicle_lidar_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#micromirrors_with_mems_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#micromirrors_with_mems_technology">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#innoviz_pro_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#field_of_view_too_narrow_for_dynamic_scenarios"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_failed_to_perform_at_25_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#field_of_view"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
 <owl:Class rdf:about="#field_of_view">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy_failed_to_perform_at_25_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#frame_rate">
+<owl:Class rdf:about="#field_of_view_too_narrow_for_dynamic_scenarios">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#minimal_detection_distance">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#rosros2">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frame_rate"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#minimal_detection_distance"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#rosros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#velodyne_velarray_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne_innoviz_horizon_m1_cube_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_noticeable_decrease_from_7_m_to_12_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
+      <owl:someValuesFrom rdf:resource="#scan_pattern"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frame_rate"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#minimal_detection_distance"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#rosros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#cube_range_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frame_rate"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#minimal_detection_distance"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#rosros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+<owl:Class rdf:about="#scan_pattern">
+  <rdfs:subClassOf rdf:resource="#Part"/>
 </owl:Class>
 
-<owl:Class rdf:about="#velarray_h800_pro_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicle_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#field_of_view"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frame_rate"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#minimal_detection_distance"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#rosros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicle"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+<owl:Class rdf:about="#accuracy_noticeable_decrease_from_7_m_to_12_m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#test_vehicle">
+<owl:Class rdf:about="#automated_driving_ad_platform_hi-drive_project">
   <rdfs:subClassOf rdf:resource="#Device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#test_vehicle_automotive_lidar">
+<owl:Class rdf:about="#automated_driving_ad_platform_hi-drive_project_lidar">
   <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#test_vehicle"/>
+  <rdfs:subClassOf rdf:resource="#automated_driving_ad_platform_hi-drive_project"/>
 </owl:Class>
 
-<owl:Class rdf:about="#velodyne_vlp-32c_model">
-  <rdfs:subClassOf rdf:resource="#test_vehicle_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#frames_per_second_10-30_fps"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_200m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_02"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#lidar_sensor_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#test_vehicle"/>
+      <owl:someValuesFrom rdf:resource="#automated_driving_ad_platform_hi-drive_project"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#price_around_usd_1300"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#automated_driving_ad_platform_hi-drive_project_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#autonomous_vehicles_drones_automotive_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_drones"/>
-</owl:Class>
-
-<owl:Class rdf:about="#blickfeld_cube_range_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_drones_automotive_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ieee_80211p"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros2"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_vehicles_drones"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automotive_lidar</category>
+<owl:Class rdf:about="#price_around_usd_1300">
+  <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
 

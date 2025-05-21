@@ -1,0 +1,1149 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/sensor_ontology.owl"
+         xmlns="http://example.org/sensor_ontology.owl#">
+
+<owl:Ontology rdf:about="http://example.org/sensor_ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_part_directly">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_property">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#implements">
+  <rdfs:domain rdf:resource="#Sensor"/>
+  <rdfs:range rdf:resource="#Technology"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#used_in">
+  <rdfs:range rdf:resource="#Device"/>
+  <rdfs:domain rdf:resource="#Sensor"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#category"/>
+
+<owl:Class rdf:about="#Device">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SensorComponent">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sensor">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Technology">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_monitoring_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_monitoring_system_capacitive_pressure_sensor_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#pressure_monitoring_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#f8-type_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#pressure_monitoring_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#thermocompression_bonding_for_tsvs"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#thermocompression_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#comsol_62_simulation_with_electromechanical_physics_interface"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#comsol_62_electromechanical_physics_interface"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thickness_impact_on_performance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thermal_stability_157_pmc_5"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thermal_stability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thermal_drift_-00164_fsk_at_350c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#temperature_sensitivity_effect"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity_34_ffkpa"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_temperature_up_to_350_c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#nonlinearity_1"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#membrane_area_consideration"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#maximum_measuring_range_276_bar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#max_temperature_up_to_350c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#linearity_99994"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#linearity_improvement"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#hysteresis_analysis_through_linear_behavior_and_equations"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#combined_performance_6"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsvs_through-silicon_vias"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv_design"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#silicon_substrate"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#monocrystalline_silicon_substrate"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mems_diaphragm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mems"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#membrane_thickness_variation"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#measurement_cavity"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#internal_electrodes"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#bonding_layer"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#pressure_monitoring_system_capacitive_pressure_sensor_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitive_pressure_sensor_pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#bonding_layer">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#internal_electrodes">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#measurement_cavity">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane_thickness_variation">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems_diaphragm">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#monocrystalline_silicon_substrate">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon_substrate">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv_design">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsvs_through-silicon_vias">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#combined_performance_6">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hysteresis_analysis_through_linear_behavior_and_equations">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#linearity_improvement">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#linearity_99994">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#max_temperature_up_to_350c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#maximum_measuring_range_276_bar">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane_area_consideration">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nonlinearity_1">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#operating_temperature_up_to_350_c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity_34_ffkpa">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#temperature_sensitivity_effect">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermal_drift_-00164_fsk_at_350c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermal_stability">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermal_stability_157_pmc_5">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thickness_impact_on_performance">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#comsol_62_electromechanical_physics_interface">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#comsol_62_simulation_with_electromechanical_physics_interface">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermocompression_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermocompression_bonding_for_tsvs">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#absolute_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#absolute_pressure_sensor_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#absolute_pressure_sensor"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensors_2025_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#absolute_pressure_sensor"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#koh_etching_process"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#inductively_coupled_plasma_icp_etching"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv_holes"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#metalization"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#insulating_layer_of_silicon_oxide_sio2"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#elastic_membrane_with_a_central_anvil"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#absolute_pressure_sensor_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#elastic_membrane_with_a_central_anvil">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulating_layer_of_silicon_oxide_sio2">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#metalization">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv_holes">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#inductively_coupled_plasma_icp_etching">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#koh_etching_process">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv_technology">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensors_25_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#absolute_pressure_sensor"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#koh_etching_process"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#inductively_coupled_plasma_icp_etching"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv_holes"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#metalization"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#insulating_layer_of_silicon_oxide_sio2"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#elastic_membrane_with_a_central_anvil"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#absolute_pressure_sensor_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#industrial_process_control_system">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#industrial_process_control_system_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#industrial_process_control_system"/>
+</owl:Class>
+
+<owl:Class rdf:about="#type_f2_absolute_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#industrial_process_control_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#metallization_layers"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#compression_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high-temperature_applications_considers_temperature-dependent_changes_in_dielectric_constant_and_thermal_stress"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mems_diaphragm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#industrial_process_control_system_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_applications_considers_temperature-dependent_changes_in_dielectric_constant_and_thermal_stress">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#compression_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#metallization_layers">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#autonomous_vehicles">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#autonomous_vehicles_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles"/>
+</owl:Class>
+
+<owl:Class rdf:about="#velodyne_vlp-16_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#autonomous_vehicles"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#silicon-silicon_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#automated_for_automotive_applications"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#mems_diaphragm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#autonomous_vehicles_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#automated_for_automotive_applications">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#silicon-silicon_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_measurement">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pressure_measurement_capacitive_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#pressure_measurement"/>
+</owl:Class>
+
+<owl:Class rdf:about="#f8_membrane_anvil_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#pressure_measurement"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity_34_ffkpa"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#measuring_range_276_bar"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#capacitance_change_exceeding_100_of_no-load_capacitance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#membrane"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#pressure_measurement_capacitive_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitive_pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#membrane">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#capacitance_change_exceeding_100_of_no-load_capacitance">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#measuring_range_276_bar">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_applications_industrial_monitoring_systems">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_applications_industrial_monitoring_systems_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#high-temperature_applications_industrial_monitoring_systems"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems-based_absolute_pressure_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#high-temperature_applications_industrial_monitoring_systems"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#innovative_tsv_fabrication_process"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#finite_element_analysis"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#reduced_temperature_dependence"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#media_resistance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#mechanical_tests_showcasing_high_linearity_and_long-term_reliability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#long-term_stability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high-temperature_resistance_up_to_350_c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv_through-silicon_via_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#piezoelectric_crystal_structure"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#high-temperature_applications_industrial_monitoring_systems_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#piezoelectric_crystal_structure">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv_through-silicon_via_technology">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_resistance_up_to_350_c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#long-term_stability">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mechanical_tests_showcasing_high_linearity_and_long-term_reliability">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#media_resistance">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#reduced_temperature_dependence">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#finite_element_analysis">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#innovative_tsv_fabrication_process">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_absolute_pressure_sensors">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-temperature_absolute_pressure_sensors_capacitive_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#high-temperature_absolute_pressure_sensors"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsv-based_pressure_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#high-temperature_absolute_pressure_sensors"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#use_of_soi_wafers_and_sic_substrates"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#parasitic_capacitances"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#low_energy_consumption"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#long-term_stability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high_thermal_and_mechanical_stability"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#challenges_with_temperature-dependent_semiconductor_effects"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsvs"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#sio2"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#doped_polysilicon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#high-temperature_absolute_pressure_sensors_capacitive_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitive_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#doped_polysilicon">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sio2">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tsvs">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#challenges_with_temperature-dependent_semiconductor_effects">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high_thermal_and_mechanical_stability">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_energy_consumption">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#parasitic_capacitances">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#use_of_soi_wafers_and_sic_substrates">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#manufacturing_processes_for_relative_pressure_and_force_measurements">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#manufacturing_processes_for_relative_pressure_and_force_measurements_relative_pressure_sensor_force_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#manufacturing_processes_for_relative_pressure_and_force_measurements"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensors_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#manufacturing_processes_for_relative_pressure_and_force_measurements"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#integration_of_tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thermal_stability_up_to_500_c"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity_0035_fsk"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#two_plates_bottom_and_top"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tsv_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#single-crystal_silicon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#manufacturing_processes_for_relative_pressure_and_force_measurements_relative_pressure_sensor_force_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relative_pressure_sensor_force_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#single-crystal_silicon">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#two_plates_bottom_and_top">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensitivity_0035_fsk">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermal_stability_up_to_500_c">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#integration_of_tsv_technology">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#generic_device">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#generic_device_pressure_sensor">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#generic_device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mems_pressure_sensors_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tsv_design"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#au-si_eutectic_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#au-au_diffusion_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#thermal_drift"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#sensitivity"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_temperature"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#linearity"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#through-silicon_via_tsv_design"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#monocrystalline_silicon"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#goldsilicon_eutectic_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#goldgold_diffusion_bonding"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#faraday_cage"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_pressure_sensor"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_sensor</category>
+</owl:Class>
+
+<owl:Class rdf:about="#faraday_cage">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#goldgold_diffusion_bonding">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#goldsilicon_eutectic_bonding">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#monocrystalline_silicon">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#through-silicon_via_tsv_design">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#linearity">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#operating_temperature">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermal_drift">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#au-au_diffusion_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#au-si_eutectic_bonding">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+
+</rdf:RDF>

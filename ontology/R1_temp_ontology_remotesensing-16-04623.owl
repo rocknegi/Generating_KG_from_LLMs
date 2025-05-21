@@ -24,8 +24,8 @@
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#used_in">
-  <rdfs:domain rdf:resource="#Sensor"/>
   <rdfs:range rdf:resource="#Device"/>
+  <rdfs:domain rdf:resource="#Sensor"/>
 </owl:ObjectProperty>
 
 <owl:AnnotationProperty rdf:about="#category"/>
@@ -54,277 +54,742 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="#agricultural_applications_autonomous_platforms_mobile_robots">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agricultural_applications_autonomous_platforms_mobile_robots_lidar_lidar_sensor_remote_sensing">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#agricultural_applications_autonomous_platforms_mobile_robots"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_sensor_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#agricultural_applications_autonomous_platforms_mobile_robots"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#tof_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#ros_robotic_operating_system"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#point_cloud_registration"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#merging_of_point_clouds"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#gps_receivers"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#3dpi_algorithm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#vertical_field_of_view_30"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#versatility_used_day_and_night_various_weather_conditions"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#real-time_obstacle_detection"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#r2_099_rmse_0017_m_for_wheat"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#r2_097_rmse_005_m_for_wheat"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#r2_088_rmse_52_cm_for_sugar_beet"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#precision_high"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#precise_data_collection"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operational_range_not_explicitly_specified_in_text"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#need_for_calibration_and_repeated_testing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#horizontal_field_of_view_360"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high_accuracy"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#exact_distance_estimation"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#comparative_sensitivity_surpasses_ultrasonic_sensors_and_rgb_cameras"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#challenges_with_illuminance_weather_and_temperature"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#biomass_estimation_using_3dpi_algorithm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#accuracy_millimeter_to_centimeter_level"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#360-degree_field_of_view"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#tof_time-of-flight_data"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#time-to-digital_converter_tdc"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#single-plant_height_computation"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#signal_processing_units"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#reflected_light_data_processing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#point_cloud_registration"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#point_cloud_analysis"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_transmitter"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_pulses"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode_ld"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#gps_receivers"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#avalanche_photodiode_apd"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#3d_model_construction"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#agricultural_applications_autonomous_platforms_mobile_robots_lidar_lidar_sensor_remote_sensing"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar_lidar_sensor_remote_sensing</category>
+</owl:Class>
+
+<owl:Class rdf:about="#3d_model_construction">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#avalanche_photodiode_apd">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gps_receivers">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_diode_ld">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_pulses">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_transmitter">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#point_cloud_analysis">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#point_cloud_registration">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#reflected_light_data_processing">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#signal_processing_units">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#single-plant_height_computation">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#time-to-digital_converter_tdc">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tof_time-of-flight_data">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#360-degree_field_of_view">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#accuracy_millimeter_to_centimeter_level">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#biomass_estimation_using_3dpi_algorithm">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#challenges_with_illuminance_weather_and_temperature">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#comparative_sensitivity_surpasses_ultrasonic_sensors_and_rgb_cameras">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exact_distance_estimation">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high_accuracy">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#horizontal_field_of_view_360">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#need_for_calibration_and_repeated_testing">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#operational_range_not_explicitly_specified_in_text">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#precise_data_collection">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#precision_high">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#r2_088_rmse_52_cm_for_sugar_beet">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#r2_097_rmse_005_m_for_wheat">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#r2_099_rmse_0017_m_for_wheat">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#real-time_obstacle_detection">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#versatility_used_day_and_night_various_weather_conditions">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vertical_field_of_view_30">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#3dpi_algorithm">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#merging_of_point_clouds">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ros_robotic_operating_system">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tof_technology">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agricultural_machinery_autonomous_vehicles_land_management_systems">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agricultural_machinery_autonomous_vehicles_land_management_systems_3d_lidar_sensor_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#agricultural_machinery_autonomous_vehicles_land_management_systems"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#agricultural_machinery_autonomous_vehicles_land_management_systems"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#voxel_grid_model"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#ransac_algorithm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#kalman_filter"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#dynamic_tracking_point_model"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#implements"/>
+      <owl:someValuesFrom rdf:resource="#discriminative_analysis"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#used_for_precise_mapping_of_farm_environments"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scalability_across_various_platforms"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#real-time_data_collection"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#integration_of_plant_and_environmental_data"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#high-resolution_spatial_data"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#enables_real-time_decision-making"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#detects_obstacles_terrain_variations_and_machinery_pathways"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#assists_in_field_boundary_detection_ridge_detection_and_soil_surface_analysis"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#3d_structural_detail_mapping"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#voxel_grid_model"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#scanning_module"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#ransac_algorithm"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#point_cloud_data"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_technology"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_pulses"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#kalman_filter"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#agricultural_machinery_autonomous_vehicles_land_management_systems_3d_lidar_sensor_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3d_lidar_sensor_lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#kalman_filter">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_technology">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#point_cloud_data">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ransac_algorithm">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scanning_module">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#voxel_grid_model">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#3d_structural_detail_mapping">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#assists_in_field_boundary_detection_ridge_detection_and_soil_surface_analysis">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#detects_obstacles_terrain_variations_and_machinery_pathways">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#enables_real-time_decision-making">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#high-resolution_spatial_data">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#integration_of_plant_and_environmental_data">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#real-time_data_collection">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scalability_across_various_platforms">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#used_for_precise_mapping_of_farm_environments">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#discriminative_analysis">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dynamic_tracking_point_model">
+  <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agricultural_applications_crop_monitoring_field_mapping_obstacle_detection_in_autonomous_vehicles_soil_resource_conservation">
+  <rdfs:subClassOf rdf:resource="#Device"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agricultural_applications_crop_monitoring_field_mapping_obstacle_detection_in_autonomous_vehicles_soil_resource_conservation_lidar">
+  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
+  <rdfs:subClassOf rdf:resource="#agricultural_applications_crop_monitoring_field_mapping_obstacle_detection_in_autonomous_vehicles_soil_resource_conservation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lidar_sensors_model">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#agricultural_applications_crop_monitoring_field_mapping_obstacle_detection_in_autonomous_vehicles_soil_resource_conservation"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#real-time_data_capabilities"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#range_accuracy"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#point_density"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#environmental_resilience"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#photodetector"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_part_directly"/>
+      <owl:someValuesFrom rdf:resource="#laser_diode"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#agricultural_applications_crop_monitoring_field_mapping_obstacle_detection_in_autonomous_vehicles_soil_resource_conservation_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#laser_diode">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#photodetector">
+  <rdfs:subClassOf rdf:resource="#Part"/>
+</owl:Class>
+
+<owl:Class rdf:about="#environmental_resilience">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#point_density">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#range_accuracy">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#real-time_data_capabilities">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
 <owl:Class rdf:about="#generic_device">
   <rdfs:subClassOf rdf:resource="#Device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#generic_device_safety_lidar">
+<owl:Class rdf:about="#generic_device_lidar">
   <rdfs:subClassOf rdf:resource="#SensorComponent"/>
   <rdfs:subClassOf rdf:resource="#generic_device"/>
 </owl:Class>
 
-<owl:Class rdf:about="#hokuyo_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_safety_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#standards_for_safety_lidar"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#vlp-16_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
       <owl:someValuesFrom rdf:resource="#generic_device"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">safety_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#standards_for_safety_lidar">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
-</owl:Class>
-
-<owl:Class rdf:about="#generic_device_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#generic_device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lms400-2000_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_agricultural_lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#scanning_frequency_20_hz"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_300500_m"/>
+      <owl:someValuesFrom rdf:resource="#operating_range_100_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_25100_mm"/>
+      <owl:someValuesFrom rdf:resource="#error_margin_30_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
+</owl:Class>
+
+<owl:Class rdf:about="#error_margin_30_m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#operating_range_100_m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scanning_frequency_20_hz">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hdl-32_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
       <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#fpga_processor">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#mems_mirror">
-  <rdfs:subClassOf rdf:resource="#Part"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_300500_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution_25100_mm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lms511_pro_sr_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_614_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_25100_mm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#range_614_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#utm-30lx-ew_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_30_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_2550_mm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#range_30_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution_2550_mm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_vz-400_v_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_101000_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_30300_mm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#range_101000_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#resolution_30300_mm">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lms111_model">
-  <rdfs:subClassOf rdf:resource="#generic_device_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#fpga_processor"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_part_directly"/>
-      <owl:someValuesFrom rdf:resource="#mems_mirror"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_20_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#resolution_2550_mm"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#generic_device"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#range_20_m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#tractors_robots_sprayers_agrob_v16_agricultural_robotic_platform">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#tractors_robots_sprayers_agrob_v16_agricultural_robotic_platform_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#tractors_robots_sprayers_agrob_v16_agricultural_robotic_platform"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne_vlp-16_puck-lite_model">
-  <rdfs:subClassOf rdf:resource="#tractors_robots_sprayers_agrob_v16_agricultural_robotic_platform_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#error_30m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#operating_range_100m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -335,18 +800,25 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#tractors_robots_sprayers_agrob_v16_agricultural_robotic_platform"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_range_80100_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#error_margin_20_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#error_30m">
+<owl:Class rdf:about="#error_margin_20_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#operating_range_100m">
+<owl:Class rdf:about="#operating_range_80100_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
@@ -354,106 +826,11 @@
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#tractors_robots_sprayers">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#tractors_robots_sprayers_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#tractors_robots_sprayers"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne_vlp-16_model">
-  <rdfs:subClassOf rdf:resource="#tractors_robots_sprayers_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#error_30m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#operating_range_100m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scanning_frequency_520_hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#lms400_pro_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#tractors_robots_sprayers"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#tractors_robots">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#tractors_robots_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#tractors_robots"/>
-</owl:Class>
-
-<owl:Class rdf:about="#riegl_vux-1uav_model">
-  <rdfs:subClassOf rdf:resource="#tractors_robots_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#error_510m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#operating_range_151415m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#scanning_frequency_1200_hz"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#tractors_robots"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#error_510m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#operating_range_151415m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#scanning_frequency_1200_hz">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#lms511-10100_pro_model">
-  <rdfs:subClassOf rdf:resource="#tractors_robots_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#error_614_m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#operating_range_40m"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -464,18 +841,25 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#tractors_robots"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_range_3_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#error_margin_614_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#error_614_m">
+<owl:Class rdf:about="#error_margin_614_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#operating_range_40m">
+<owl:Class rdf:about="#operating_range_3_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
@@ -484,17 +868,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="#faro_focus_x330_model">
-  <rdfs:subClassOf rdf:resource="#tractors_robots_agricultural_lidar"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#error_2m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#operating_range_30330m"/>
+      <owl:onProperty rdf:resource="#used_in"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
@@ -505,18 +882,25 @@
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#tractors_robots"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_range_30330_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#error_margin_2_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#error_2m">
+<owl:Class rdf:about="#error_margin_2_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#operating_range_30330m">
+<owl:Class rdf:about="#operating_range_30330_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
@@ -524,93 +908,44 @@
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#mobile_robot">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#mobile_robot_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#mobile_robot"/>
-</owl:Class>
-
-<owl:Class rdf:about="#velodyne_hdl64-s3_model">
-  <rdfs:subClassOf rdf:resource="#mobile_robot_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#r2_097"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_005m"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#implements"/>
-      <owl:someValuesFrom rdf:resource="#ros"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
+<owl:Class rdf:about="#lms111_model">
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#mobile_robot"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
-</owl:Class>
-
-<owl:Class rdf:about="#r2_097">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#range_005m">
-  <rdfs:subClassOf rdf:resource="#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="#ros">
-  <rdfs:subClassOf rdf:resource="#Technology"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_platform">
-  <rdfs:subClassOf rdf:resource="#Device"/>
-</owl:Class>
-
-<owl:Class rdf:about="#autonomous_platform_agricultural_lidar">
-  <rdfs:subClassOf rdf:resource="#SensorComponent"/>
-  <rdfs:subClassOf rdf:resource="#autonomous_platform"/>
-</owl:Class>
-
-<owl:Class rdf:about="#hdl-64_model">
-  <rdfs:subClassOf rdf:resource="#autonomous_platform_agricultural_lidar"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#r2_099"/>
+      <owl:someValuesFrom rdf:resource="#generic_device"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="#has_property"/>
-      <owl:someValuesFrom rdf:resource="#range_0017m"/>
+      <owl:someValuesFrom rdf:resource="#scanning_frequency_2550_hz"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="#used_in"/>
-      <owl:someValuesFrom rdf:resource="#autonomous_platform"/>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#operating_range_20_m"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricultural_lidar</category>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_property"/>
+      <owl:someValuesFrom rdf:resource="#error_margin_12_m"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#generic_device_lidar"/>
+  <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lidar</category>
 </owl:Class>
 
-<owl:Class rdf:about="#r2_099">
+<owl:Class rdf:about="#error_margin_12_m">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="#range_0017m">
+<owl:Class rdf:about="#operating_range_20_m">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scanning_frequency_2550_hz">
   <rdfs:subClassOf rdf:resource="#Property"/>
 </owl:Class>
 
